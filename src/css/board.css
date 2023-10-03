@@ -1,11 +1,9 @@
-*{
+
+.wd_p , .ed_p , .magzine_p{
     font-family: sans-serif;
     box-sizing: border-box;
     color: aliceblue;
-}
-.wd_p , .ed_p , .magzine_p{
     text-align: justify;
-    font-family: 'Titillium Web', sans-serif;
     font-size: 1.1rem;
     padding-top: 1%;
     padding-left: 8%;

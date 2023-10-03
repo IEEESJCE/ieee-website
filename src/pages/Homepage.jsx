@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Event from '../components/Event'
 import Footer from '../components/Footer'
 import styled from 'styled-components'
+import Past_events from '../components/Past_events'
 import '../css/index.css'
 import Caraousel from '../components/Caraousel'
 function Homepage() {
@@ -28,6 +29,7 @@ function Homepage() {
         </div>
       </div>
       <Event />
+      <Past_events />
       <Caraousel />
       <Footer />
     </Container>

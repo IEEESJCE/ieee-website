@@ -8,9 +8,9 @@ function Event() {
         <hr className="hr-1"/>
       </div>
 
-      <div class="new_event">
+      <div className="new_event">
         <img src="/photos/events/iot.png" alt=""/>
-        <div class="inside_box">
+        <div className="inside_box">
             <h1> IoT WORKSHOP</h1>
             <p>Greetings from IEEE-SJCE!
                 <br/>
@@ -49,15 +49,15 @@ function Event() {
                 Darshan: +91 7892202663
                 <br/>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScSFyOO_yOdaFdMRK-tZPvCSG840KwLKrbp-Udne40t3iuSTQ/viewform?usp=send_form">
-                    <button class="btn">Register</button>
+                    <button className="btn">Register</button>
                 </a>                
             </p>
         </div>
       </div>
 
-      <div class="new_event" id="new_event_2">
+      <div className="new_event" id="new_event_2">
         
-        <div class="inside_box">
+        <div className="inside_box">
             <h1>SOLDERING AND ETCHING WORKSHOP </h1>
             <p>Greetings from IEEE-SJCE!
                 <br/>
@@ -98,7 +98,7 @@ function Event() {
                 Ashwin:9513908310
                 <br/>
                 <a href="https://bit.ly/soldering_and_etching">
-                    <button class="btn">Register</button>
+                    <button className="btn">Register</button>
                 </a>                
             </p>
         </div>
