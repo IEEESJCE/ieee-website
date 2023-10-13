@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Event from '../components/Event'
-import Footer from '../components/Footer'
 import styled from 'styled-components'
 import Past_events from '../components/Past_events'
 import '../css/index.css'
 import Caraousel from '../components/Caraousel'
+import Milestone_events from '../components/Milestone_events'
+import Sponsor from '../components/Sponsor'
+import Footer from '../components/Footer'
 function Homepage() {
   return (
     <Container>
@@ -29,8 +31,10 @@ function Homepage() {
         </div>
       </div>
       <Event />
-      <Past_events />
       <Caraousel />
+      <Past_events />
+      <Milestone_events />
+      <Sponsor/>
       <Footer />
     </Container>
   )
