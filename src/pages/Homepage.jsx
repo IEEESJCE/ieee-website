@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Banner from '../components/Banner'
 import Event from '../components/Event'
 import styled from 'styled-components'
 import Past_events from '../components/Past_events'
@@ -8,20 +9,19 @@ import Caraousel from '../components/Caraousel'
 import Milestone_events from '../components/Milestone_events'
 import Sponsor from '../components/Sponsor'
 import Footer from '../components/Footer'
+import Bangalore_Flagship from '../components/Bangalore_Flagship'
 function Homepage() {
   return (
     <Container>
       <Navbar />
-      <div className="banner-div">
-        <img className="banner" src="/photos/gallery/sl1.jfif" alt="banner" />
-      </div>
-
+      <Banner/>
       <div className="introduction" id="introduction_part">
-        <div className="heading">
+        <div className="first-heading">
           <h2>Experience the joy of learning with IEEE-SJCE!</h2>
         </div>
         <div className="second-heading">
           <h2>IMAGINE ! - INNOVATE ! - INSPIRE !</h2>
+          
         </div>
         <div>
           <p className="paragraph">
@@ -34,6 +34,7 @@ function Homepage() {
       <Caraousel />
       <Past_events />
       <Milestone_events />
+      <Bangalore_Flagship />
       <Sponsor/>
       <Footer />
     </Container>
@@ -41,70 +42,91 @@ function Homepage() {
 }
 
 const Container = styled.div`
-  .banner {
-    width: 100vw;
-    height: 90vh;
-    object-fit: cover;
-    position: relative;
-    margin-top: 3rem;
-    background-size: cover;
-    transparent: 0.5;
-    filter: blur(1px) brightness(25%);
-  }
-
   /* Introduction */
 
   .introduction {
-    padding-top: 3% 2%;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    .heading h2 {
-      padding-left: 25auto;
+    .first-heading h2 {
+      text-align: center;
       font-family: sans-serif;
       font-size: 1.9rem;
       color: white;
       letter-spacing: 0.1rem;
-      margin: 0px;
+      margin-top: 2%;
+      color: #b8c0e7;
     }
 
     .second-heading h2 {
       padding: auto;
       text-align: center;
-      font-size: 2rem;
-      font-weight: 500;
+      font-size: 3.5rem;
+      font-weight: 750;
       letter-spacing: 0.01rem;
       font-family: sans-serif;
-      color: #00ffff;
+      color: #2085de;
+      animation: lights 5s 750ms linear infinite;
       /* -webkit-text-stroke: 0.5px black; */
     }
 
     .paragraph {
-      padding-left: 10%;
-      font-family: cursive;
       font-size: 1.5rem;
-      color: white;
-      padding-right: 10%;
-      letter-spacing: 0.1rem;
-      /* margin-bottom: 5%; */
+      font-weight: 500;
+      line-height: 1.5;
+      color: #b8c0e7;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+      text-align: center;
+      padding: 0px 5%;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  @keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+      color: hsl(230, 80%, 90%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+      color: hsl(230, 100%, 95%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
     }
   }
 
   @media screen and (max-width: 750px) {
-    .banner-div {
-      .banner {
-        width: 100vw;
-        height: 70vh;
-        margin-top: 3.2rem;
-      }
-      .banner{
-        width: 100vw;
-        height: 70vh;
-        margin-top: 3.2rem;
-      }
-    }
     .introduction {
       .heading h2 {
         padding: 0% 2%;
