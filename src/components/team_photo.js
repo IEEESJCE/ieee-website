@@ -2,7 +2,7 @@ export const team_photo = [
   {
     id: 1,
     type: 'executive_committee',
-    src: '/photos/members/subroto.png',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'www.linkedin.com/in/members/subroto.pngry',

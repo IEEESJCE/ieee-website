@@ -72,17 +72,6 @@ const Container = styled.div`
       /* -webkit-text-stroke: 0.5px black; */
     }
 
-    .paragraph {
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 1.5;
-      color: #b8c0e7;
-      margin-bottom: 1.5rem;
-      margin-top: 1.5rem;
-      text-align: center;
-      padding: 0px 5%;
-      font-family: 'Montserrat', sans-serif;
-    }
   }
   @keyframes lights {
     0% {
