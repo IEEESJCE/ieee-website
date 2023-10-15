@@ -93,7 +93,7 @@ function Team() {
         </div>
       </div>
 
-      <button class="accordion" onClick={handleClick}>
+      <button className="accordion" onClick={handleClick}>
         <span>IEEE Execom 2022</span>
         <span className="plus">+</span>
       </button>

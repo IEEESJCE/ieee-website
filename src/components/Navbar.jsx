@@ -49,7 +49,7 @@ function Navbar() {
             </div>
           </li>
           <li>
-            <a href="./societies.html" className="">
+            <a href="./societies" className="">
               SOCIETIES
             </a>
             <div className="dropdown">
@@ -97,7 +97,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="./contact_us.html" className="navbar-links">
+            <a href="./contact" className="navbar-links">
               CONTACT
             </a>
           </li>
