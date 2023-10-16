@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Past_events from '../components/Past_events'
 import '../css/index.css'
 import Caraousel from '../components/Caraousel'
+import Stand_for from '../components/Stand_for' 
 import Milestone_events from '../components/Milestone_events'
 import Sponsor from '../components/Sponsor'
 import Footer from '../components/Footer'
@@ -34,6 +35,7 @@ function Homepage() {
       <Caraousel />
       <Past_events />
       <Milestone_events />
+      <Stand_for/>
       <Bangalore_Flagship />
       <Sponsor/>
       <Footer />
