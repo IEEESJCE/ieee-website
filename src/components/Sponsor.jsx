@@ -4,6 +4,8 @@ export default function Sponsor() {
   return (
     
       <div className="slide_container">
+        <h1 className="heading">Our Sponsors</h1>
+        <hr className="hr-1" />
         <div class="scroll-parent">
           <div class="scroll-element primary">
             <img src="/photos/sponsors/10.png" alt="damilola jerugba" />
