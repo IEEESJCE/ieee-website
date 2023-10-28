@@ -6,8 +6,8 @@ export default function Sponsor() {
       <div className="slide_container">
         <h1 className="heading">Our Sponsors</h1>
         <hr className="hr-1" />
-        <div class="scroll-parent">
-          <div class="scroll-element primary">
+        <div className="scroll-parent">
+          <div className="scroll-element primary">
             <img src="/photos/sponsors/10.png" alt="damilola jerugba" />
             <img src="/photos/sponsors/11.png" alt="tosin jerugba" />
             <img src="/photos/sponsors/12.png" alt="fiyin jerugba" />
@@ -19,7 +19,7 @@ export default function Sponsor() {
             <img src="/photos/sponsors/18.png" alt="feyikemi jerugba" />
             <img src="/photos/sponsors/19.png" alt="femi jerugba" />
           </div>
-          <div class="scroll-element secondary">
+          <div className="scroll-element secondary">
             <img src="/photos/sponsors/10.png" alt="damilola jerugba" />
             <img src="/photos/sponsors/11.png" alt="tosin jerugba" />
             <img src="/photos/sponsors/12.png" alt="fiyin jerugba" />

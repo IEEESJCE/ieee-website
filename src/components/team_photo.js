@@ -11,7 +11,7 @@ export const team_photo = [
   {
     id: 2,
     type: 'executive_committee',
-    src: '/photos/members/subroto.png',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'www.linkedin.com/in/members/subroto.pngry',
@@ -20,7 +20,7 @@ export const team_photo = [
   {
     id: 3,
     type: 'executive_committee',
-    src: '/photos/members/subroto.png',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'www.linkedin.com/in/members/subroto.pngry',
@@ -29,7 +29,7 @@ export const team_photo = [
   {
     id: 4,
     type: 'executive_committee',
-    src: '/photos/members/subroto.png',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'www.linkedin.com/in/members/subroto.pngry',
@@ -38,7 +38,7 @@ export const team_photo = [
   {
     id: 5,
     type: 'executive_committee',
-    src: '/photos/members/subroto.png',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'www.linkedin.com/in/members/subroto.pngry',
@@ -47,7 +47,7 @@ export const team_photo = [
   {
     id: 6,
     type: 'executive_committee',
-    src: '/photos/members/subroto.png',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'www.linkedin.com/in/members/subroto.pngry',

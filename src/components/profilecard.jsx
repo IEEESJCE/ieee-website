@@ -13,7 +13,7 @@ function profilecard(props) {
                     <ul className="social">
                         <li><a href={props.photo.linkedin} className="fab fa-linkedin"><i className="fa fa-linkedin" aria-hidden="true"/></a></li>
                       <li><a href={`mailto:${props.photo.gamil}`} ><i className="fa fa-envelope" aria-hidden="true"/></a></li>
-                    </ul>
+                    </ul> 
                 </div>
                 <div className="team-content">
                     <h3 className="title">{props.photo.name}</h3>

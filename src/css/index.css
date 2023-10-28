@@ -14,10 +14,10 @@ height: 100vh;
 ::-webkit-scrollbar{
     display: none;
 }
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 .heading {
     display: flex;
     justify-content: space-around;
@@ -118,6 +118,11 @@ code {
       margin-bottom: 10%;
       text-decoration: underline;
       letter-spacing: 0.02rem;
+    }
+    .paragraph{
+      font-size: 1rem;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
     .btn{
       font-size: small;

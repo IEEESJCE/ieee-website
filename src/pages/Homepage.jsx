@@ -8,9 +8,13 @@ import '../css/index.css'
 import Caraousel from '../components/Caraousel'
 import Stand_for from '../components/Stand_for' 
 import Milestone_events from '../components/Milestone_events'
+import Achievements from '../components/Achievements'
+import Bangalore_Flagship from '../components/Bangalore_Flagship'
+import Flagship from '../components/Flagship'
+import Prayas from '../components/Prayas'
+import Mentors from '../components/Mentors'
 import Sponsor from '../components/Sponsor'
 import Footer from '../components/Footer'
-import Bangalore_Flagship from '../components/Bangalore_Flagship'
 function Homepage() {
   return (
     <Container>
@@ -35,8 +39,12 @@ function Homepage() {
       <Caraousel />
       <Past_events />
       <Milestone_events />
+      <Achievements/>
       <Stand_for/>
       <Bangalore_Flagship />
+      <Flagship/>
+      <Prayas/>
+      <Mentors/>
       <Sponsor/>
       <Footer />
     </Container>

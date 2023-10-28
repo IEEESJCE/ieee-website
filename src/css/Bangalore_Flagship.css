@@ -29,7 +29,7 @@
 }
 .serviceBox:before{
     content: '';
-    background: linear-gradient(to bottom,#4c4f59 89%,var(--main-color) 0%);
+    background: linear-gradient(to bottom,rgb(61, 72, 83) 89%,var(--main-color) 0%);
     position: absolute;
     top: 10px;
     left: 0;
@@ -99,9 +99,13 @@
     transition: 0.4s;
 }
 .serviceBox.orange{ --main-color: #e67e22; }
-.serviceBox.purple{ --main-color: #8bbacc; }
+.serviceBox.purple{ --main-color: #5faef4e1; }
 .serviceBox.blue{ --main-color: #3498db; }
 @media only screen and (max-width: 1199px){
+    .serviceBox{ margin: 0 30px 30px; }
+    .Bangalore_Section_p{
+        font-size: 1rem;
+    }
     .row{
         flex-wrap: wrap;
     }

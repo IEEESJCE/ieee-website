@@ -10,9 +10,9 @@ function Stand_for() {
   )
   const active =document.getElementsByClassName('active');
 
-  console.log(active[1])
+  // console.log(active[1])
   const handleClick=(e)=>{
-    console.log(e);
+    // console.log(e);
     active[0].classList.remove('active')
     e.target.classList.add('active')
     const newImage = details.filter((details) => details.work_name === e.target.innerText)[0].work_img;
@@ -32,7 +32,7 @@ function Stand_for() {
            
           {  details.map((detail)=>{
               return detail.id != '1' ? (
-                <li onClick={handleClick} value={detail.id}>
+                <li onClick={handleClick} value={detail.id} key={detail.id}>
                   <p className="work">{detail.work_name}</p>
                 </li>
               ) : (

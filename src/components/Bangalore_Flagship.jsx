@@ -11,11 +11,11 @@ function Bangalore_Flagship() {
         completing its Silver Jubilee in flying colours. We have also been able
         to bag the best website award two times in a row.
       </p>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="serviceBox purple">
-            <h3 class="title">HOUSE OF CARDS</h3>
-            <p class="description">
+      <div className="row">
+        <div className="col-md-3 col-sm-6">
+          <div className="serviceBox purple">
+            <h3 className="title">HOUSE OF CARDS</h3>
+            <p className="description">
               A simulation of a political scenario with real world problems. As
               citizens, we all have voices, but there comes a moment in history
               which rarely does, such as this. We give you the stage to come and
@@ -33,10 +33,10 @@ function Bangalore_Flagship() {
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="serviceBox purple">
-            <h3 class="title">IEEEXtreme 16.0</h3>
-            <p class="description">
+        <div className="col-md-3 col-sm-6">
+          <div className="serviceBox purple">
+            <h3 className="title">IEEEXtreme 16.0</h3>
+            <p className="description">
               IEEEXtreme is a global challenge in which teams of IEEE Student
               members - advised and proctored by an IEEE member, and often
               supported by an IEEE Student Branch compete against each other to
@@ -51,10 +51,10 @@ function Bangalore_Flagship() {
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="serviceBox purple">
-            <h3 class="title">HAC SAC 2.0</h3>
-            <p class="description">
+        <div className="col-md-3 col-sm-6">
+          <div className="serviceBox purple">
+            <h3 className="title">HAC SAC 2.0</h3>
+            <p className="description">
               Did someone say hackathon? All the bright-eyed problem solvers get
               ready because Student Coordination Team – IEEE Bangalore Section
               is back with HAC SAC 2.0, a virtual hackathon. We are proud to
