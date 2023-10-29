@@ -15,16 +15,21 @@ function Caraousel() {
         selectedItem={0}
         transitionTime={700}
         showStatus={false}
-        
       >
         <div>
-          <img src="/photos/gallery/sl1.jfif" alt="" />
+          <img src="/photos/gallery/sl1.jpg" alt="" />
         </div>
         <div>
           <img src="/photos/gallery/sl2.jpeg" alt="" />
         </div>
         <div>
           <img src="/photos/gallery/sl3.jpg" alt="" />
+        </div>
+        <div>
+          <img src="/photos/gallery/sl4.jpeg" alt="" />
+        </div>
+        <div>
+          <img src="/photos/gallery/sl5.jpeg" alt="" />
         </div>
       </Carousel>
     </div>
