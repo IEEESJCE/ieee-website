@@ -114,7 +114,9 @@ function Past_events() {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            iconStyle={{ background: '#78b0d8', color: '#fff' }}
+            icon={
+              <img className="event_img" src="photos/gallery/tl5.png" alt="" />
+            }
             // icon={<StarIcon />}
           />
         </VerticalTimeline>
@@ -125,7 +127,9 @@ function Past_events() {
       <div className="past_events_smallscreen">
         <h1 className="heading">Past Events</h1>
         <hr className="hr-1" />
-        <VerticalTimeline lineColor={'rgb(147, 169, 187)'}>
+        <VerticalTimeline lineColor={'rgb(147, 169, 187)'}
+        lineHeight={1.5}
+        >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
@@ -227,7 +231,9 @@ function Past_events() {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            icon={
+              <img className="event_img" src="photos/gallery/tl5.png" alt="" />
+            }
             // icon={<StarIcon />}
           />
         </VerticalTimeline>
