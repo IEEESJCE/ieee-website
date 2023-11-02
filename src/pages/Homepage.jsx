@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
+import Confetti from 'react-confetti'
 import Event from '../components/Event'
 import styled from 'styled-components'
 import Past_events from '../components/Past_events'
@@ -19,14 +20,17 @@ function Homepage() {
   return (
     <Container>
       <Navbar />
-      <Banner/>
+      <Banner />
+      <Confetti 
+      height={window.innerHeight}
+      width={window.innerWidth}
+      />
       <div className="introduction" id="introduction_part">
         <div className="first-heading">
           <h2>Experience the joy of learning with IEEE-SJCE!</h2>
         </div>
         <div className="second-heading">
           <h2>IMAGINE ! - INNOVATE ! - INSPIRE !</h2>
-          
         </div>
         <div>
           <p className="paragraph">
@@ -39,13 +43,13 @@ function Homepage() {
       <Caraousel />
       <Past_events />
       <Milestone_events />
-      <Achievements/>
-      <Stand_for/>
+      <Achievements />
+      <Stand_for />
       <Bangalore_Flagship />
-      <Flagship/>
-      <Prayas/>
-      <Mentors/>
-      <Sponsor/>
+      <Flagship />
+      <Prayas />
+      <Mentors />
+      <Sponsor />
       <Footer />
     </Container>
   )

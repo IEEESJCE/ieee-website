@@ -27,7 +27,7 @@ function Team() {
       <p className="paragraph">
         Our Team Members who have contributed immensely to our Growth
       </p>
-      <Caraousel/>
+      <Caraousel />
       <div className="executive_committe">
         <h1 className="small_heading ">EXECUTIVE COMMITTEE</h1>
         <div className="executive_committe_card">
@@ -42,7 +42,9 @@ function Team() {
         <h1 className="small_heading ">MEMBERSHIP DEVELOPMENT COMMITTEE</h1>
         <div className="executive_committe_card">
           {team_photo
-            .filter((photo) => photo.type === 'executive_committee')
+            .filter(
+              (photo) => photo.type === 'MEMBERSHIP DEVELOPMENT COMMITTEE'
+            )
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
             })}
@@ -53,7 +55,7 @@ function Team() {
         <h1 className="small_heading ">ELECTRON DEVICES SOCIETY</h1>
         <div className="executive_committe_card">
           {team_photo
-            .filter((photo) => photo.type === 'executive_committee')
+            .filter((photo) => photo.type === 'Electron Devices Society')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
             })}
@@ -64,7 +66,7 @@ function Team() {
         <h1 className="small_heading ">WOMEN IN ENGINEERING</h1>
         <div className="executive_committe_card">
           {team_photo
-            .filter((photo) => photo.type === 'executive_committee')
+            .filter((photo) => photo.type === 'women in engineering')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
             })}
@@ -75,7 +77,7 @@ function Team() {
         <h1 className="small_heading ">ROBOTICS AND AUTOMATION SOCIETY</h1>
         <div className="executive_committe_card">
           {team_photo
-            .filter((photo) => photo.type === 'executive_committee')
+            .filter((photo) => photo.type === 'robotics and automation society')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
             })}
@@ -86,13 +88,28 @@ function Team() {
         <h1 className="small_heading ">WEB DEVELOPMENT BOARD</h1>
         <div className="executive_committe_card">
           {team_photo
-            .filter((photo) => photo.type === 'executive_committee')
+            .filter((photo) => photo.type === 'web development board')
+            .map((photo) => {
+              return <Profilecard key={photo.id} photo={photo} />
+            })}
+        </div>
+      </div>
+      <div className="executive_committe">
+        <h1 className="small_heading ">Editorial Board</h1>
+        <div className="executive_committe_card">
+          {team_photo
+            .filter(
+              (photo) => photo.type === 'editorial board'
+            )
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
             })}
         </div>
       </div>
 
+
+            {/* EXECOM 2022 */}
+            
       <button className="accordion" onClick={handleClick}>
         <span>IEEE Execom 2022</span>
         <span className="plus">+</span>

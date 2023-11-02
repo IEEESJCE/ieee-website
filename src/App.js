@@ -5,6 +5,7 @@ import Board from './pages/Board';
 import Album from './pages/Album';
 import Team from './pages/Team';
 import Societies from './pages/Societies';
+import Contact from './pages/Contact';
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/album" element={<Album />} />
         <Route path="/team" element={<Team />} />
         <Route path="/societies" element={<Societies/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </BrowserRouter>
   )

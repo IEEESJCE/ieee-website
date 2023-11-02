@@ -1,7 +1,7 @@
 
 .banner {
-    width: 100vw;
-    height: 100vh;
+    width: 100VW;
+    height: 100VH;
     object-fit: cover;
     position: relative;
     margin-top: 1rem;
@@ -28,7 +28,7 @@
   left: 38%;
   font-size: 4rem;
   max-width: 40ch;
-  text-align: center;
+  /* text-align: center; */
   transform: scale(0.94);
   z-index: 5;
   animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -38,7 +38,7 @@
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
-    color: rgb(183, 201, 209);
+  color: #b8c0e7;
 }
 
 .welcome_title span:nth-child(1) {
@@ -64,13 +64,20 @@
 
 .animate_character 
 {
-   text-transform: uppercase;
-  background-image: linear-gradient(
+  text-transform: uppercase;
+  /* background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #488acd 29%,
     #1d86cd 67%,
     #b292dc 100%
+  ); */
+   background-image: linear-gradient(
+    -225deg,
+    #322976 0%,
+    #5299dfdd 29%,
+    #1b9ef5 67%,
+    #8686f2 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -89,10 +96,7 @@
     0% {
     transform: scale(0);
   }
-    50% {
-    transform: scale(0.5);
-  }
-    100% {
+   100% {
     transform: scale(1);
   }
 }
@@ -121,6 +125,84 @@
 @keyframes textclip {
   to {
     background-position: 200% center;
+  }
+}
+
+.explore_btn_div{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  z-index: 20;
+}
+.explore_btn{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid #5faef4fc;
+  background: transparent;
+  color: #b8c0e7;
+  position: relative;
+  /* animation-name: appear;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in; */
+  animation: appear 3.5s ease-in;
+  cursor: pointer;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, -100px);
+  }
+  50% {
+    opacity: 0;
+    transform: translate3d(0, 0, -50px);
+  }
+  80% {
+    opacity: 0;
+    transform: translate3d(0, 0, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.explore_btn::after {
+  content: '';
+  height: 3px;
+    width: 0;
+    background: #5faef4fc;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    transition: .5s;
+  }
+.explore_btn:hover::after {
+      width: 91%;
+      margin-left: 4.5%;
+ }
+  
+  @media screen and (max-width:768px) {
+    .welcome_title{
+    font-size: 2.5rem;
+    left:20%;
+    top: 30%;
+  }
+  .club_name{
+    top: 42%;
+  }
+  .animate_character{
+    font-size: 4.7rem;
+  }
+
+  .explore_btn_div{
+    bottom: 30%;
   }
 }
 
