@@ -98,7 +98,7 @@ function Contact(){
 
             <p class="service_para">Reach us on</p>
             <a className="service_link" href="tel:+918762361434">
-              (+91)8762361434
+              (+91) 7829478991
             </a>
           </div>
 

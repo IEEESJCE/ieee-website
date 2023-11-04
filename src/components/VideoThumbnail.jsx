@@ -3,7 +3,7 @@ import '../css/videoThumbnail.css'
 function VideoThumbnail() {
   return (
     <>
-      <h1 className="small_heading">Videoes</h1>
+      <h1 className="small_heading">Videos</h1>
       <div className="video_thumbnail_container">
         <div className="content">
           <div className="video-gallery">
