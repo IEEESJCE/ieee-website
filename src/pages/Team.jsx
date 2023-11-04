@@ -29,7 +29,9 @@ function Team() {
       </p>
       <Caraousel />
       <div className="executive_committe">
-        <h1 className="small_heading ">EXECUTIVE COMMITTEE</h1>
+        <h1 className="small_heading" id="team_execom_id">
+          EXECUTIVE COMMITTEE
+        </h1>
         <div className="executive_committe_card">
           {team_photo
             .filter((photo) => photo.type === 'executive_committee')
@@ -39,7 +41,9 @@ function Team() {
         </div>
       </div>
       <div className="executive_committe">
-        <h1 className="small_heading ">MEMBERSHIP DEVELOPMENT COMMITTEE</h1>
+        <h1 className="small_heading " id="team_mdc_id">
+          MEMBERSHIP DEVELOPMENT COMMITTEE
+        </h1>
         <div className="executive_committe_card">
           {team_photo
             .filter(
@@ -52,7 +56,7 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading ">ELECTRON DEVICES SOCIETY</h1>
+        <h1 className="small_heading" id='team_societies_id'>ELECTRON DEVICES SOCIETY</h1>
         <div className="executive_committe_card">
           {team_photo
             .filter((photo) => photo.type === 'Electron Devices Society')
@@ -63,7 +67,7 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading ">WOMEN IN ENGINEERING</h1>
+        <h1 className="small_heading " i>WOMEN IN ENGINEERING</h1>
         <div className="executive_committe_card">
           {team_photo
             .filter((photo) => photo.type === 'women in engineering')
@@ -74,7 +78,7 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading ">ROBOTICS AND AUTOMATION SOCIETY</h1>
+        <h1 className="small_heading " >ROBOTICS AND AUTOMATION SOCIETY</h1>
         <div className="executive_committe_card">
           {team_photo
             .filter((photo) => photo.type === 'robotics and automation society')
@@ -85,7 +89,7 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading ">WEB DEVELOPMENT BOARD</h1>
+        <h1 className="small_heading " id='team_boards_id'>WEB DEVELOPMENT BOARD</h1>
         <div className="executive_committe_card">
           {team_photo
             .filter((photo) => photo.type === 'web development board')
@@ -95,21 +99,18 @@ function Team() {
         </div>
       </div>
       <div className="executive_committe">
-        <h1 className="small_heading ">Editorial Board</h1>
+        <h1 className="small_heading " >Editorial Board</h1>
         <div className="executive_committe_card">
           {team_photo
-            .filter(
-              (photo) => photo.type === 'editorial board'
-            )
+            .filter((photo) => photo.type === 'editorial board')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
             })}
         </div>
       </div>
 
+      {/* EXECOM 2022 */}
 
-            {/* EXECOM 2022 */}
-            
       <button className="accordion" onClick={handleClick}>
         <span>IEEE Execom 2022</span>
         <span className="plus">+</span>

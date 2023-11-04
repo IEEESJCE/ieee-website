@@ -8,7 +8,7 @@ function Socities() {
       <Navbar />
       <h1 className="heading">Societies</h1>
       <hr className="hr-1" />
-      <h3 className="small_heading">IEEE SJCE Student branch</h3>
+      <h3 className="small_heading" id='societies_student_branch_id'>IEEE SJCE Student branch</h3>
 
       <p className="societies_p">
         <iframe
@@ -63,7 +63,7 @@ function Socities() {
         Student Chapter.
       </p>
 
-      <h3 className="small_heading" id="eds_id">
+      <h3 className="small_heading" id="socities_eds_id">
         ELECTRON DEVICES SOCIETY
       </h3>
 
@@ -131,7 +131,7 @@ function Socities() {
         and are controlled using mobile phones through DTMF.
       </p>
 
-      <h3 className="small_heading" id="wie_id">
+      <h3 className="small_heading" id="societies_wie_id">
         WOMEN IN ENGINEERING
       </h3>
 
@@ -230,7 +230,7 @@ function Socities() {
         among the top five winners.
       </p>
 
-      <h3 className="small_heading" id="rds_id">
+      <h3 className="small_heading" id="societies_rds_id">
         ROBOTICS AND AUTOMATION SOCIETY
       </h3>
 

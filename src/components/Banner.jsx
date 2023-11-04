@@ -17,8 +17,12 @@ function Banner() {
         <div className="club_name">
           <h1 className="animate_character">IEEE SJCE</h1>
         </div>
-        <div className='explore_btn_div'>
-          <a href="https://www.linkedin.com/in/subroto-koiry"><button className='explore_btn'>Explore</button></a>
+        <div className="explore_btn_div">
+          <HashLink smooth to="#explore_id">
+            <button className="explore_btn" id="explore_id">
+              Explore
+            </button>
+          </HashLink>
         </div>
       </div>
     </div>

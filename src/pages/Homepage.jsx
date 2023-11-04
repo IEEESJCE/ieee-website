@@ -77,7 +77,7 @@ const Container = styled.div`
     .second-heading h2 {
       padding: auto;
       text-align: center;
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-weight: 750;
       letter-spacing: 0.01rem;
       font-family: sans-serif;

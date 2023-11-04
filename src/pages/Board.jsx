@@ -11,7 +11,7 @@ function Board() {
       <h1 className="heading">BOARDS</h1>
       <hr className="hr-1" />
       <div className="topic_div">
-        <h3 className="small_heading" id="web_id">
+        <h3 className="small_heading" id="board_web_dev_id">
           WEB DEVELOPMENT BOARD
         </h3>
       </div>
@@ -51,7 +51,7 @@ function Board() {
         </p>
       </div>
 
-      <h3 className="small_heading" id="ed_id">
+      <h3 className="small_heading" id="board_ed_id">
         EDITORIAL BOARD
       </h3>
 
@@ -79,7 +79,7 @@ function Board() {
         </p>
       </div>
 
-      <h3 className="small_heading">Annual Magazine</h3>
+      <h3 className="small_heading" id="board_magazine">Annual Magazine</h3>
       <div className="magzine_div">
         <p className="magzine_p">
           We at IEEE SJCE are thrilled to announce that our much-anticipated

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { HashLink } from 'react-router-hash-link'
 import '../css/navbar.css'
 function Navbar() {
   const toggle=(e)=>{
@@ -34,72 +35,125 @@ function Navbar() {
           <span className="bar"></span>
         </div>
         <ul className="navbar-dropdown">
-          <li >
-            <a href="./board" className="navbar-links">
+          <li>
+            <HashLink smooth to="/board" className="navbar-links">
               BOARDS
-            </a>
+            </HashLink>
             <div className="dropdown">
-              <a href="./boards.html#web_id">
+              {/* <a href="./boards.html#web_id">
+              </a> */}
+              <HashLink
+                smooth
+                to="/board#board_web_dev_id"
+                className="navbar-links"
+              >
                 <img src="/photos/vectors/web-dev.png" alt="" />
-                <span>WEB-DEVELOPMENT BOARD</span>{' '}
-              </a>
-              <a href="./boards.html#ed_id">
-                <img src="/photos/vectors/pen.png" alt="" /> EDITORIAL BOARD
-              </a>
+                <span>WEB-DEVELOPMENT-BOARD</span>{' '}
+              </HashLink>
+              <HashLink smooth to="/board#board_ed_id" className="navbar-links">
+                <img src="/photos/vectors/pen.png" alt="" />
+                <span>EDITORIAL BOARD</span>{' '}
+              </HashLink>
+              <HashLink
+                smooth
+                to="/board#board_magazine"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/magazine_icon.png" alt="" />
+                <span>ANNUAL MAGAZINE</span>{' '}
+              </HashLink>
             </div>
           </li>
           <li>
-            <a href="./societies" className="">
+            <HashLink smooth to="/societies" className="navbar-links">
               SOCIETIES
-            </a>
+            </HashLink>
             <div className="dropdown">
-              <a href="./societies.html#std_id">
-                <img src="/photos/vectors/student1.png" alt="" /> STUDENT BRANCH
-              </a>
-              <a href="./societies.html#eds_id">
-                <img src="/photos/vectors/electronic.png" alt="" /> ELECTRON
-                DEVICES SOCIETY
-              </a>
-              <a href="./societies.html#wie_id">
-                <img src="/photos/vectors/woman.png" alt="" /> WOMEN IN
-                ENGINEERING
-              </a>
-              <a href="./societies.html#rds_id">
-                <img src="/photos/vectors/robotics.png" alt="" /> ROBOTICS AND
-                AUTOMATION SOCIETY
-              </a>
+              <HashLink
+                smooth
+                to="/societies#societies_student_branch_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/student1.png" alt="" />
+                <span>STUDENT BRANCH</span>{' '}
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/societies#socities_eds_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/electronic.png" alt="" />
+                <span>ELECTRON DEVICES SOCIETY</span>{' '}
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/societies#societies_wie_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/woman.png" alt="" />
+                <span>WOMEN IN ENGINEERING</span>{' '}
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/societies#societies_rds_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/robotics.png" alt="" />
+                <span>ROBOTICS AND AUTOMATION SOCIETY</span>{' '}
+              </HashLink>
             </div>
           </li>
           <li>
-            <a href="/team" className="navbar-links">
+            <HashLink smooth to="/team" className="navbar-links">
               TEAM
-            </a>
+            </HashLink>
             <div className="dropdown">
-              <a href="./team.html#execom">
-                <img src="/photos/vectors/executive committee.png" alt="" />{' '}
-                EXECUTIVE COMMITTEE
-              </a>
-              <a href="./team.html#mem_id">
-                <img src="/photos/vectors/membership.png" alt="" /> MEMBERSHIP
-                COMMITTEE
-              </a>
-              <a href="./team.html#socities_id">
-                <img src="/photos/vectors/society.png" alt="" /> SOCIETY
-              </a>
-              <a href="./team.html#boards_id">
-                <img src="/photos/vectors/board.png" alt="" /> BOARDS
-              </a>
+              <HashLink
+                smooth
+                to="/team#team_execom_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/executive committee.png" alt="" />
+                <span>EXECUTIVE COMMITEE</span>{' '}
+              </HashLink>
+
+              <HashLink smooth to="/team#team_mdc_id" className="navbar-links">
+                <img src="/photos/vectors/membership.png" alt="" />
+                <span>MEMBERSHIP DRIVE COMMITEE</span>{' '}
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/team#team_societies_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/society.png" alt="" />
+                <span>SOCIETIES</span>{' '}
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/team#team_boards_id"
+                className="navbar-links"
+              >
+                <img src="/photos/vectors/board.png" alt="" />
+                <span>BOARDS</span>{' '}
+              </HashLink>
+
             </div>
           </li>
           <li>
-            <a href="./album" className="navbar-links">
+            <HashLink smooth to="/album" className="navbar-links">
               GALLERY
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a href="./contact" className="navbar-links">
+            <HashLink smooth to="/contact" className="navbar-links">
               CONTACT
-            </a>
+            </HashLink>
           </li>
         </ul>
       </div>
