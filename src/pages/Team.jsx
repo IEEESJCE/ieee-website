@@ -2,9 +2,13 @@ import {React} from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Profilecard from '../components/profilecard'
-import { team_photo } from '../components/team_photo'
+import {
+  current_team_photo,
+  senior2022_team_photo,
+} from '../components/team_photo'
 import '../css/team.css'
 import Caraousel from '../components/Caraousel'
+
 function Team() {
   var hide = document.getElementsByClassName('hide')
   var plus = document.getElementsByClassName('plus')
@@ -33,7 +37,7 @@ function Team() {
           EXECUTIVE COMMITTEE
         </h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter((photo) => photo.type === 'executive_committee')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
@@ -45,7 +49,7 @@ function Team() {
           MEMBERSHIP DEVELOPMENT COMMITTEE
         </h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter(
               (photo) => photo.type === 'MEMBERSHIP DEVELOPMENT COMMITTEE'
             )
@@ -56,9 +60,11 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading" id='team_societies_id'>ELECTRON DEVICES SOCIETY</h1>
+        <h1 className="small_heading" id="team_societies_id">
+          ELECTRON DEVICES SOCIETY
+        </h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter((photo) => photo.type === 'Electron Devices Society')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
@@ -67,9 +73,11 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading " i>WOMEN IN ENGINEERING</h1>
+        <h1 className="small_heading " i>
+          WOMEN IN ENGINEERING
+        </h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter((photo) => photo.type === 'women in engineering')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
@@ -78,9 +86,9 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading " >ROBOTICS AND AUTOMATION SOCIETY</h1>
+        <h1 className="small_heading ">ROBOTICS AND AUTOMATION SOCIETY</h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter((photo) => photo.type === 'robotics and automation society')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
@@ -89,9 +97,11 @@ function Team() {
       </div>
 
       <div className="executive_committe">
-        <h1 className="small_heading " id='team_boards_id'>WEB DEVELOPMENT BOARD</h1>
+        <h1 className="small_heading " id="team_boards_id">
+          WEB DEVELOPMENT BOARD
+        </h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter((photo) => photo.type === 'web development board')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
@@ -99,9 +109,9 @@ function Team() {
         </div>
       </div>
       <div className="executive_committe">
-        <h1 className="small_heading " >Editorial Board</h1>
+        <h1 className="small_heading ">Editorial Board</h1>
         <div className="executive_committe_card">
-          {team_photo
+          {current_team_photo
             .filter((photo) => photo.type === 'editorial board')
             .map((photo) => {
               return <Profilecard key={photo.id} photo={photo} />
@@ -120,7 +130,7 @@ function Team() {
         <div className="executive_committe">
           <h1 className="small_heading ">EXECUTIVE COMMITTEE</h1>
           <div className="executive_committe_card">
-            {team_photo
+            {senior2022_team_photo
               .filter((photo) => photo.type === 'executive_committee')
               .map((photo) => {
                 return <Profilecard key={photo.id} photo={photo} />
@@ -130,8 +140,8 @@ function Team() {
         <div className="executive_committe">
           <h1 className="small_heading ">MEMBERSHIP DEVELOPMENT COMMITTEE</h1>
           <div className="executive_committe_card">
-            {team_photo
-              .filter((photo) => photo.type === 'executive_committee')
+            {senior2022_team_photo
+              .filter((photo) => photo.type === 'MEMBERSHIP DEVELOPMENT COMMITTEE')
               .map((photo) => {
                 return <Profilecard key={photo.id} photo={photo} />
               })}
@@ -141,8 +151,8 @@ function Team() {
         <div className="executive_committe">
           <h1 className="small_heading ">ELECTRON DEVICES SOCIETY</h1>
           <div className="executive_committe_card">
-            {team_photo
-              .filter((photo) => photo.type === 'executive_committee')
+            {senior2022_team_photo
+              .filter((photo) => photo.type === 'Electron Devices Society')
               .map((photo) => {
                 return <Profilecard key={photo.id} photo={photo} />
               })}
@@ -152,8 +162,8 @@ function Team() {
         <div className="executive_committe">
           <h1 className="small_heading ">WOMEN IN ENGINEERING</h1>
           <div className="executive_committe_card">
-            {team_photo
-              .filter((photo) => photo.type === 'executive_committee')
+            {senior2022_team_photo
+              .filter((photo) => photo.type === 'women in engineering')
               .map((photo) => {
                 return <Profilecard key={photo.id} photo={photo} />
               })}
@@ -163,8 +173,8 @@ function Team() {
         <div className="executive_committe">
           <h1 className="small_heading ">ROBOTICS AND AUTOMATION SOCIETY</h1>
           <div className="executive_committe_card">
-            {team_photo
-              .filter((photo) => photo.type === 'executive_committee')
+            {senior2022_team_photo
+              .filter((photo) => photo.type === 'robotics and automation society')
               .map((photo) => {
                 return <Profilecard key={photo.id} photo={photo} />
               })}
@@ -174,8 +184,8 @@ function Team() {
         <div className="executive_committe">
           <h1 className="small_heading ">WEB DEVELOPMENT BOARD</h1>
           <div className="executive_committe_card">
-            {team_photo
-              .filter((photo) => photo.type === 'executive_committee')
+            {senior2022_team_photo
+              .filter((photo) => photo.type === 'web development board')
               .map((photo) => {
                 return <Profilecard key={photo.id} photo={photo} />
               })}
