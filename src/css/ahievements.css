@@ -22,11 +22,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 650px;
+    max-width: 100%;
     /* height: fit-content; */
     padding: 2%;
     margin: 2%;
-    border-radius: 2em;
+    border-radius: 1.2em;
     cursor: pointer;
     background-color:  rgb(61, 72, 83);
     /* -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
@@ -69,7 +69,7 @@
     }
     .achievement_box{
         width: 290px;
-        margin-bottom: 3%;
+        margin: 5% auto;
         /* border-radius: 0px;
         border-bottom: none;
         border-top-right-radius: 2em; */

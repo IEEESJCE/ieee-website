@@ -113,8 +113,9 @@
         padding: 0px;
     }
     .work_img img{
+    position: relative;
     height: 200px;
-    width: 290px;
+    max-width:100%;
     border-radius: 5%;
     object-fit: cover;
     }
