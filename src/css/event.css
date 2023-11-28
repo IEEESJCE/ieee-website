@@ -69,11 +69,11 @@ border-radius: 20px;
 .inside_box h1{
   margin-bottom: 1%;
   text-align: center;
-  font-family: 'Alkalami', serif;
-  color: #5198ee;
+  font-family: Arial, Helvetica, sans-serif ;
+  color: #0794f1;
 }
 .inside_box .btn{
-  /* background-color: #0558be; */
+  background-color: #0794f1;
   width: 20%;
   height: 10%;
   margin-top: 2%;

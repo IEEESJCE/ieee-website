@@ -17,7 +17,7 @@ function Event() {
             <br />
             <br />
             With great pleasure, IEEE-SJCE presents its odd semester technical
-            fest ,<b>🎉 TUXEDO'23! 🎉</b>
+            fest ,<b style={{ color: '#0095da' }}> 🎉 TUXEDO'23! 🎉</b>
             <br />
             <br />
             Join us and take part in the most thrilling series of events! 💥
@@ -28,14 +28,19 @@ function Event() {
             The list of events for this incredible week is provided below.👇
             <br />
             <br />
-            1. Snap Circuits 🧑‍🔧
-            <br /> 2. Web Dev Bootcamp 👩‍💻 <br /> 3. Scribble 📝
+            1.<b style={{ color: '#0095da' }}> Snap Circuits </b> 🧑‍🔧
+            <br /> 2.<b style={{ color: '#0095da' }}>
+              {' '}
+              Web Dev Bootcamp{' '}
+            </b> 👩‍💻 <br />
+            3. <b style={{ color: '#0095da' }}> Scribble </b> 📝
             <br />
             <br />
             🗓 Mark the dates❗
             <br />
             <br />
-            28th November - 4th December, 2023
+            <b style={{ color: '#0095da' }}>28th November - 4th December 2023</b>,
+            
             <br />
             <br />
             Join the WhatsApp group for further updates❗
@@ -44,9 +49,9 @@ function Event() {
             For further details, contact :-
             <br />
             <br />
-            Vineeth:+91 6361711970
+            Vineeth:+91 <b style={{ color: '#0095da' }}>6361711970 </b>
             <br />
-            Chaitanya: +91 8123667019
+            Chaitanya: +91 <b style={{ color: '#0095da' }}>8123667019</b>
             <br />
           </p>
           <button className="btn">
@@ -69,7 +74,8 @@ function Event() {
             Greetings from IEEE-SJCE! 💥
             <br />
             <br />
-            Welcome to the first event of <b>Tuxedo'23!</b> ✨
+            Welcome to the first event of{' '}
+            <b style={{ color: '#0095da' }}>Tuxedo'23!</b> ✨
             <br />
             <br />
             New to the world of electronics? Curious to know how electronic
@@ -77,7 +83,7 @@ function Event() {
             <br />
             The EDS wing of IEEE-SJCE has organised a key event. Prepare
             yourselves to discover the circuits around you. Get ready to be
-            electrified by,<b>🌟 Snap Circuits 🌟</b>
+            electrified by,<b>🌟 <b style={{ color: '#0095da' }}>Snap Circuits</b> 🌟</b>
             <br />
             <br />
             Snap circuits provides a hands-on experience of electronic
@@ -93,16 +99,15 @@ function Event() {
             Registration fee :
             <br />
             <br />
-            IEEE Members: FREE
+            <b>IEEE Members:-</b> <b style={{ color: '#0095da' }}>FREE</b>
             <br />
-            IEEE members without RAS - Rs. 300/-
+            <b>IEEE members without RAS</b>:- <b style={{ color: '#0095da' }}>Rs. 300/-</b>
             <br />
-            Non IEEE Members: INR 50/-
+            <b>Non IEEE Members</b>:- <b style={{ color: '#0095da' }}>INR 50/-</b>
             <br />
             <br />
-            🗓 Date: 28th and 29th November 2023
-            <br /> ⌚ Time: 5:30 PM <br />
-            🏢 Venue: NPS 001
+            🗓 Date: <b style={{ color: '#0095da' }}>28th and 29th November 2023</b><br /> ⌚ Time: <b style={{ color: '#0095da' }}>5:30 PM</b> <br />
+            🏢 Venue: <b style={{ color: '#0095da' }}>NPS 001</b>
             <br />
             {/* Kit price: Rs. 1100/-
             <br />
@@ -120,9 +125,9 @@ function Event() {
             For further details, contact :-
             <br />
             <br />
-            Pranav:+91 9116489472
+            Pranav:+91 <b style={{ color: '#0095da' }}>9116489472</b>
             <br />
-            Vallish: +91 9611684755
+            Vallish: +91 <b style={{ color: '#0095da' }}>9611684755</b>
             <br />
           </p>
           <button className="btn">
@@ -183,9 +188,9 @@ function Event() {
             <br />
             Entry fee :
             <br />
-            IEEE Members: <b style={{ color: '#0095da' }}>FREE</b>
+            <b>IEEE Members</b>:- <b style={{ color: '#0095da' }}>FREE</b>
             <br />
-            Non IEEE Members: <b style={{ color: '#0095da' }}>INR 50/-</b>
+            <b>Non IEEE Members</b>:- <b style={{ color: '#0095da' }}>INR 50/-</b>
             <br />
             <br />
             For further details, contact
