@@ -13,7 +13,19 @@
     margin-bottom:10px;
     background: #000608;
   }
-
+/* #sticky{
+  width: 97%;
+  margin: auto;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top:0;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: #313030;
+  background-color: BLUE;
+} */
   .toggle-button {
     position: absolute;
     top: 0.75rem;
@@ -28,69 +40,16 @@
   .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color:#b8c0e7;
     border-radius: 10px;
   }
 
-  @media (max-width: 750px) {
-    .toggle-button {
-      display: flex;
-    }
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      min-height: 3rem;
-      max-height: 3rem;
-    }
-
-    #logo_img {
-      width: 2.5rem !important;
-      height: 2.5rem !important;
-      margin-left: 0.8rem;
-    }
-
-    .navbar ul {
-      display: none;
-      width: 100%;
-      flex-direction: column;
-      position: absolute;
-      top: 2.5rem;
-      background-color: #2f3031;
-    }
-
-    .navbar ul a {
-      color: #fefcfc !important;
-    }
-
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .navbar-links {
-      text-align: center;
-    }
-
-    .active {
-      display: flex !important;
-      flex-direction: column;
-    }
-
-    .navbar ul li {
-      margin-top: 1rem !important;
-    }
-    .navbar ul li:last-child {
-      margin-bottom: 1rem;
-    }
-  }
 
   .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0px 30px;
     position: relative;
   }
 
@@ -124,7 +83,7 @@
     padding-left: 11px;
     font-weight: 400;
     display: flex;
-    color: white;
+    color: #b8c0e7;
   }
 
   .navbar-dropdown .dropdown a:hover {
@@ -137,7 +96,7 @@
     width: 0;
     background: #00ffff;
     position: absolute;
-    left: 0;
+    left:0%;
     right: 0;
     bottom: -10px;
     transition: 0.5s;
@@ -147,7 +106,7 @@
   }
   .navbar ul li a {
     text-decoration: none;
-    color: aliceblue;
+    color: #b8c0e7;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -179,5 +138,79 @@
   #logo_img {
     height: 100%;
     width: 90%;
+    margin-left: 20px;
   }
 
+  @media (max-width: 750px) {
+    .toggle-button {
+      display: flex;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: 3rem;
+      max-height: 3rem;
+    }
+
+    #logo_img {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+      margin-left: 0.8rem;
+    }
+
+    .navbar ul {
+      display: none;
+      width: 93%;
+      flex-direction: column;
+      position: absolute;
+      top: 2.3rem;
+      left: 45%;
+      background-color: #2f3031;
+      /* padding: 0.5rem; */
+      margin-right:10px;
+    }
+.navbar ul li:hover:after {
+    width: 30%;
+
+  }
+  .navbar ul li::after{
+    left: 35%;
+  }
+    .navbar ul li {
+      width: 100%;
+      /* margin: 0.5rem 0; */
+      padding: 0.5rem;
+}
+    .navbar ul a {
+      color: #b8c0e7 !important;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-links {
+      text-align: center;
+    }
+
+    .active {
+      display: flex !important;
+      flex-direction: column;
+    }
+
+    .navbar ul li {
+      margin-top: 1rem !important;
+    margin: 0 -30%;
+
+    }
+    .navbar ul li:last-child {
+      margin-bottom: 1rem;
+    }
+    #logo_img {
+      margin: 0.3rem;
+    }
+  }
