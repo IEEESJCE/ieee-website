@@ -45,22 +45,22 @@ return (
 
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/ieee_sjce/">
               <i className="fab fa-instagram icon"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/ieeesjce/">
               <i className="fab fa-facebook-f icon"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/ieee-sjce/mycompany/">
               <i className="fab fa-linkedin-in icon"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.youtube.com/user/IEEESJCE">
               <i className="fab fa-youtube icon"></i>
             </a>
           </li>
@@ -73,7 +73,6 @@ return (
       </p>
       {/* <!-- <hr> --> */}
     </div>
-
   </div>
 )
 }

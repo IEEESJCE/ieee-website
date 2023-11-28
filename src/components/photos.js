@@ -45,7 +45,7 @@ export const photos = [
     height: 3,
   },
   {
-    src: '/photos/gallery/album/IMG-20231103-WA0015.jpg',
+    src: '/photos/gallery/album/IMG_2742.JPG',
     width: 4,
     height: 3,
   },
@@ -53,5 +53,35 @@ export const photos = [
     src: '/photos/gallery/album/IMG-20231103-WA0015.jpg',
     width: 4,
     height: 3,
+  },
+  {
+    src: '/photos/gallery/album/IMG_2740.JPG',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/IMG_2741.JPG',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/DSC_0942.JPG',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/20231125_223933.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/IMG_20221126_162112.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/IMG_20221126_171253.jpg',
+    width: 1,
+    height: 1,
   },
 ]
