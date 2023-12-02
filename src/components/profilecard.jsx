@@ -1,7 +1,10 @@
-import React from 'react'
+import {React,useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import '../css/profilecard.css'
 
 function profilecard(props) {
+  
   return (
     <div key={props.id}>
       <div className="profile_card_container">
@@ -12,7 +15,7 @@ function profilecard(props) {
                     <img src={props.photo.src}/>
                     <ul className="social">
                         <li><a href={props.photo.linkedin} className="fab fa-linkedin"><i className="fa fa-linkedin" aria-hidden="true"/></a></li>
-                      <li><a href={`mailto:${props.photo.gamil}`} ><i className="fa fa-envelope" aria-hidden="true"/></a></li>
+                      <li><a href={`mailto:${props.photo.gmail}`} ><i className="fa fa-envelope" aria-hidden="true"/></a></li>
                     </ul> 
                 </div>
                 <div className="team-content">

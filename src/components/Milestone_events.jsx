@@ -1,6 +1,14 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import '../css/milestone_events.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Milestone_events() {
+   useEffect(() => {
+     AOS.init({
+       duration: 1000, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
   const events = [
     {
       id: 1,
@@ -60,14 +68,16 @@ function Milestone_events() {
   return (
     <>
       <div className="event" id="event_part">
-        <h1 className="heading">Milestones Events</h1>
+        <h1 className="heading" data-aos="fade">
+          Milestones Events
+        </h1>
         <hr className="hr-1" />
       </div>
       <div className="outer_milestone_container">
         <div className="milestone_container">
           {events.map((event) => {
             return (
-              <div className="card" key={event.id}>
+              <div className="card" key={event.id} data-aos="zoom-in">
                 <div className="image">
                   <img href="#" src={event.img} alt="" />
                 </div>

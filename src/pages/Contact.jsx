@@ -68,6 +68,7 @@ function Contact(){
             ></iframe>
           </div>
         </div>
+        
         {/* <div className="con-main-info">
             <h1 className="con-info-h1">CONTACT US</h1>
             <p className="con-info-p">We would like to here from you</p>
@@ -104,12 +105,15 @@ function Contact(){
 
           <div class="box">
             <iframe
-              style={{ border: 'none',height:'100px'}}
+              style={{ border: 'none', height: '100px' }}
               src="https://lottie.host/?file=1341d09a-b282-4dc2-8685-e26dc2784943/Nu0yAutyXc.json"
             ></iframe>
 
             <p class="service_para">Follow us on insta</p>
-            <a className="service_link" href="www.instagram.com/ieee_sjce/">
+            <a
+              className="service_link"
+              href="https://www.instagram.com/ieee_sjce/"
+            >
               @ieee_sjce
             </a>
           </div>

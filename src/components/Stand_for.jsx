@@ -1,7 +1,15 @@
-import {React,useState} from 'react'
+import {React,useState,useEffect} from 'react'
 import '../css/stand_for.css'
 import details from './Stand_for_details'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Stand_for() {
+   useEffect(() => {
+     AOS.init({
+       duration: 1000, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
   const [ work_img, setwork_img ] = useState(
     details.filter((details) => details.id === 1)[0].work_img
   )
@@ -24,13 +32,14 @@ function Stand_for() {
   }
   return (
     <div>
-      <h1 className="heading">What We Stand For</h1>
+      <h1 className="heading" data-aos="fade">
+        What We Stand For
+      </h1>
       <hr className="hr-1" />
-      <div className="container">
+      <div className="container" data-aos="zoom-in">
         <div className="works">
           <ul>
-           
-          {  details.map((detail)=>{
+            {details.map((detail) => {
               return detail.id != '1' ? (
                 <li onClick={handleClick} value={detail.id} key={detail.id}>
                   <p className="work">{detail.work_name}</p>
@@ -47,7 +56,7 @@ function Stand_for() {
               <img src={work_img} alt="" />
             </div>
             <div className="work_desc">
-                <p>{work_desc}</p>
+              <p>{work_desc}</p>
             </div>
           </div>
         </div>

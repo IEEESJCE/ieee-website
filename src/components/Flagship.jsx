@@ -1,6 +1,14 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import '../css/flagship.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Flagship() {
+   useEffect(() => {
+     AOS.init({
+       duration: 1000, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
     const data = [
       {
         id: 1,
@@ -46,21 +54,23 @@ function Flagship() {
     ]
   return (
     <div>
-      <h1 className='heading'>Flagship Events</h1>
-      <hr className='hr-1' />
-        <div className='flagship'>
-            {data.map((item) => {
-            return (
-                <div className='flagship_card' key={item.id}>
-                <h2 className='flagship_heading'>{item.heading}</h2>
-                <p className='flagship_content'>{item.content}</p>
-                <a href={item.link} className='flagship_link'>
-                    Know More
-                </a>
-                </div>
-            )
-            })}
-        </div>
+      <h1 className="heading" data-aos="fade">
+        Flagship Events
+      </h1>
+      <hr className="hr-1" />
+      <div className="flagship">
+        {data.map((item) => {
+          return (
+            <div className="flagship_card" key={item.id} data-aos="zoom-in">
+              <h2 className="flagship_heading">{item.heading}</h2>
+              <p className="flagship_content">{item.content}</p>
+              <a href={item.link} className="flagship_link">
+                Know More
+              </a>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

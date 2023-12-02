@@ -1,65 +1,79 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import '../css/mentor.css'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Mentors() {
+   useEffect(() => {
+     AOS.init({
+       duration: 1000, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
     const mentors_data = [
       {
         id: 1,
         type: 'BRANCH COUNSELLOR',
         src: '/photos/members/MG Veena.jpg',
         name: 'Dr. M G VEENA',
-        linkedin: 'www.linkedin.com/in/members/subroto.pngry',
-        gmail: 'koirysubroto@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/veena-m-g-3b2ab039/',
+        gmail: 'veenamaheshn@gmail.com',
       },
       {
         id: 2,
         type: 'RAS ADVISOR',
         src: '/photos/members/SUDARSHAN PK.jpeg',
         name: 'Dr. SUDARSHAN P K',
-        linkedin: 'www.linkedin.com/in/members/subroto.pngry',
-        gmail: 'koirysubroto@gmail.com',
+        linkedin:
+          'https://www.linkedin.com/in/sudarshan-patilkulkarni-86178447/',
+        gmail: 'sudarshan_pk@sjce.ac.in',
       },
       {
         id: 3,
         type: 'EDS ADVISOR',
         src: '/photos/members/SB RUDRASWAMY.jpg',
         name: 'Dr. S B RUDRASWAMY',
-        linkedin: 'www.linkedin.com/in/members/subroto.pngry',
-        gmail: 'koirysubroto@gmail.com',
+        linkedin: '',
+        gmail: 'rudra.swamy@gmail.com',
       },
       {
         id: 4,
         type: 'WIE ADVISOR',
         src: '/photos/members/SUPREETHA M.jpg',
         name: 'Ms. SUPREETHA M',
-        linkedin: 'www.linkedin.com/in/members/subroto.pngry',
-        gmail: 'koirysubroto@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/supreetha-manjanna-65308415/',
+        gmail: 'supreetha.manjann@sjce.ac.in',
       },
       {
         id: 5,
         type: 'SBMDC ADVISOR',
         src: '/photos/members/SHASHIDHAR R.jpg',
         name: 'Dr. SHASHIDHAR R',
-        linkedin: 'www.linkedin.com/in/members/subroto.pngry',
-        gmail: 'koirysubroto@gmail.com',
-      }
+        linkedin: 'https://www.linkedin.com/in/shashidhar-r-ph-d-ab6152123/',
+        gmail: 'shashidhar.r@sjce.ac.in',
+      },
     ]
   return (
     <div>
-      <h1 className="heading">Our Mentors</h1>
+      <h1 className="heading" data-aos="fade">
+        Our Mentors
+      </h1>
       <hr className="hr-1" />
       <div className="mentors_container">
         <div className="row">
           {mentors_data.map((data) => {
             return (
-              <div className="mentors_wrapper" key={data.id}>
+              <div
+                className="mentors_wrapper"
+                key={data.id}
+                data-aos="zoom-in"
+              >
                 <div className="mentors">
                   <div className="pic">
                     <img src={data.src} />
                     <ul className="social">
                       <li>
                         <a
-                          href={`mailto:${data.gamil}`}
+                          href={`mailto:${data.gmail}`}
                           className="fa fa-envelope"
                           aria-hidden="true"
                         ></a>

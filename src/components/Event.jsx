@@ -1,18 +1,28 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import '../css/event.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Event() {
+   useEffect(() => {
+     AOS.init({
+       duration: 900, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
   return (
     <div>
       <div className="event" id="event_part">
-        <h1 className="heading">Events</h1>
+        <h1 className="heading" data-aos="fade">
+          Events
+        </h1>
         <hr className="hr-1" />
       </div>
 
-      <div className="new_event " id="new_event_1">
-        <img src="/photos/events/event0_photo.jpg" alt="" />
+      <div className="new_event " id="new_event_1" data-aos="zoom-in">
+        <img src="/photos/events/event0_photo.jpg" data-aos="zoom-in" alt="" />
         <div className="inside_box">
           <h1> TUXEDO</h1>
-          <p>
+          <p data-aos="zoom-in">
             Greetings from IEEE-SJCE!
             <br />
             <br />
@@ -39,8 +49,10 @@ function Event() {
             🗓 Mark the dates❗
             <br />
             <br />
-            <b style={{ color: '#0095da' }}>28th November - 4th December 2023</b>,
-            
+            <b style={{ color: '#0095da' }}>
+              28th November - 4th December 2023
+            </b>
+            ,
             <br />
             <br />
             Join the WhatsApp group for further updates❗
@@ -66,11 +78,16 @@ function Event() {
         </div>
       </div>
 
-      <div className="new_event " id="new_event_2">
-        <img src="/photos/events/event1_photo.jpg" alt="" id="image1" />
+      <div className="new_event " id="new_event_2" data-aos="zoom-in">
+        <img
+          src="/photos/events/event1_photo.jpg"
+          alt=""
+          id="image1"
+          data-aos="zoom-in"
+        />
         <div className="inside_box">
           <h1> SNAP CIRCUITS</h1>
-          <p>
+          <p data-aos="zoom-in">
             Greetings from IEEE-SJCE! 💥
             <br />
             <br />
@@ -83,7 +100,10 @@ function Event() {
             <br />
             The EDS wing of IEEE-SJCE has organised a key event. Prepare
             yourselves to discover the circuits around you. Get ready to be
-            electrified by,<b>🌟 <b style={{ color: '#0095da' }}>Snap Circuits</b> 🌟</b>
+            electrified by,
+            <b>
+              🌟 <b style={{ color: '#0095da' }}>Snap Circuits</b> 🌟
+            </b>
             <br />
             <br />
             Snap circuits provides a hands-on experience of electronic
@@ -101,12 +121,16 @@ function Event() {
             <br />
             <b>IEEE Members:-</b> <b style={{ color: '#0095da' }}>FREE</b>
             <br />
-            <b>IEEE members without RAS</b>:- <b style={{ color: '#0095da' }}>Rs. 300/-</b>
+            <b>IEEE members without RAS</b>:-{' '}
+            <b style={{ color: '#0095da' }}>Rs. 300/-</b>
             <br />
-            <b>Non IEEE Members</b>:- <b style={{ color: '#0095da' }}>INR 50/-</b>
+            <b>Non IEEE Members</b>:-{' '}
+            <b style={{ color: '#0095da' }}>INR 50/-</b>
             <br />
             <br />
-            🗓 Date: <b style={{ color: '#0095da' }}>28th and 29th November 2023</b><br /> ⌚ Time: <b style={{ color: '#0095da' }}>5:30 PM</b> <br />
+            🗓 Date:{' '}
+            <b style={{ color: '#0095da' }}>28th and 29th November 2023</b>
+            <br /> ⌚ Time: <b style={{ color: '#0095da' }}>5:30 PM</b> <br />
             🏢 Venue: <b style={{ color: '#0095da' }}>NPS 001</b>
             <br />
             {/* Kit price: Rs. 1100/-
@@ -143,11 +167,11 @@ function Event() {
         <img src="/photos/events/event1_photo.jpg" alt="" id="image2" />
       </div>
 
-      <div className="new_event" id="new_event_1">
-        <img src="/photos/events/event2_photo.jpg" alt="" />
+      <div className="new_event" id="new_event_1" data-aos="zoom-in">
+        <img src="/photos/events/event2_photo.jpg" alt="" data-aos="zoom-in" />
         <div className="inside_box">
           <h1>WEB DEV BOOTCAMP </h1>
-          <p>
+          <p data-aos="zoom-in">
             Greetings from IEEE-SJCE! 💥
             <br />
             <br />
@@ -190,7 +214,8 @@ function Event() {
             <br />
             <b>IEEE Members</b>:- <b style={{ color: '#0095da' }}>FREE</b>
             <br />
-            <b>Non IEEE Members</b>:- <b style={{ color: '#0095da' }}>INR 50/-</b>
+            <b>Non IEEE Members</b>:-{' '}
+            <b style={{ color: '#0095da' }}>INR 50/-</b>
             <br />
             <br />
             For further details, contact

@@ -5,12 +5,13 @@
     text-align: justify;
     font-size: 1.1rem;
     padding-top: 1%;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
     padding-bottom: 2%;
     line-height: 1.8rem;
     letter-spacing: .08rem;
     position: relative;
+
 }
 
 .societies_subheading{
@@ -156,36 +157,66 @@
     padding-bottom: 2%;
     object-fit: cover;
 }
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
 
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}   
  @media screen and (max-width: 750px){
+    .societies_p{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .img1{
         width:18rem;
         height: 15rem;
-        margin-bottom: 2rem;
+        margin:8% 0%;
+        float: none;
     }
     .img2{
         width:19rem;
         height: 15rem;
-        margin-bottom: 2rem;
+        margin:8% 0%;
+        float: none;
     }
     .img3{
         width:19rem;
         height: 15rem;
-        margin-bottom: 2rem;
+        margin:8% 0%;
+        float: none;
     }
     .img4{
         width:17rem;
         height: 13rem;
-        margin-bottom: 2rem;
+        margin:8% 0%;
+        float: none;
+    }
+    .img5{
+        width:18rem;
+        height: 15rem;
+        margin:8% 0%;
+        float: none;
     }
     .img6{
         width:19rem;
         height: 15rem;
-        margin-bottom: 2rem;
+        margin:8% 0%;
+        float: none;
     }
     .img7{
         width:19rem;
         height: 15rem;
-        margin-bottom: 2rem;
+        margin:8% 0%;
+        float: none;
+        padding: auto;
     }
 }

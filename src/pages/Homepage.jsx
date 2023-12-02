@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Confetti from 'react-confetti'
@@ -16,24 +16,31 @@ import Prayas from '../components/Prayas'
 import Mentors from '../components/Mentors'
 import Sponsor from '../components/Sponsor'
 import Footer from '../components/Footer'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Homepage() {
+   useEffect(() => {
+     AOS.init({
+       duration: 1300, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
   return (
     <Container>
       <Navbar />
       <Banner />
-      <Confetti 
-      height={window.innerHeight}
-      width={window.innerWidth}
-      />
+      <Confetti height={window.innerHeight} width={window.innerWidth} />
       <div className="introduction" id="introduction_part">
         <div className="first-heading">
-          <h2>Experience the joy of learning with IEEE-SJCE!</h2>
+          <h2 data-aos="zoom-in">
+            Experience the joy of learning with IEEE-SJCE!
+          </h2>
         </div>
-        <div className="second-heading">
+        <div className="second-heading" data-aos="zoom-in">
           <h2>IMAGINE ! - INNOVATE ! - INSPIRE !</h2>
         </div>
         <div>
-          <p className="paragraph">
+          <p className="paragraph" data-aos="zoom-in">
             IEEE-SJCE conducts many events regularly for students to gain
             knowledge and encourages them to take active part in all of them.
           </p>

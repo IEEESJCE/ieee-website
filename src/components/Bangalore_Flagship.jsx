@@ -1,25 +1,35 @@
-import React from 'react'
+import {useEffect,React} from 'react'
 import '../css/Bangalore_Flagship.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Bangalore_Flagship() {
+   useEffect(() => {
+     AOS.init({
+       duration: 1000, // Set the duration of the animation
+       once: true, // Only animate once
+     })
+   }, [])
   return (
     <div>
-      <h1 className="heading">Bangalore Section</h1>
+      <h1 className="heading" data-aos="fade">
+        Bangalore Section
+      </h1>
       <hr className="hr-1" />
 
-      <p className="Bangalore_Section_p">
+      <p className="Bangalore_Section_p" data-aos="zoom-in">
         IEEE-SJCE has been successfully recognized by IEEE Bangalore section for
         completing its Silver Jubilee in flying colours. We have also been able
         to bag the best website award two times in a row.
       </p>
       <div className="row">
-        <div className="col-md-3 col-sm-6">
+        <div className="col-md-3 col-sm-6" data-aos="zoom-in">
           <div className="serviceBox purple">
             <h3 className="title">HOUSE OF CARDS</h3>
             <p className="description">
               A simulation of a political scenario with real world problems. As
               citizens, we all have voices, but there comes a moment in history
               which rarely does, such as this. We give you the stage to come and
-              speak about these problems, voice out your opinion, ideas and
+              speak about these problems, voice in your opinion, ideas and
               question the happenings around you. Go through the form
               descriptions very carefully and attentively.
             </p>
@@ -33,7 +43,7 @@ function Bangalore_Flagship() {
             </div>
           </div>
         </div>
-        <div className="col-md-3 col-sm-6">
+        <div className="col-md-3 col-sm-6" data-aos="zoom-in">
           <div className="serviceBox purple">
             <h3 className="title">IEEEXtreme 16.0</h3>
             <p className="description">
@@ -51,7 +61,7 @@ function Bangalore_Flagship() {
             </div>
           </div>
         </div>
-        <div className="col-md-3 col-sm-6">
+        <div className="col-md-3 col-sm-6" data-aos="zoom-in">
           <div className="serviceBox purple">
             <h3 className="title">HAC SAC 2.0</h3>
             <p className="description">

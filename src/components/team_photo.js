@@ -101,7 +101,7 @@ export const current_team_photo = [
     name: 'Abdulrahiman Choudhari',
     post: 'STUDENT CO-ORDINATOR',
     linkedin: 'https://bit.ly/Linkedin_Abdulrahiman',
-    gmail: 'abdulrahiman@ieee.org',
+    gmail: 'abdulrahimankc123@gmail.com',
   },
   {
     id: 13,
@@ -871,7 +871,7 @@ export const senior2022_team_photo = [
   {
     id: 44,
     type: 'editorial board',
-    src: '/photos/members/hardik.jpg',
+    src: '/photos/members/Chandana.jpg',
     name: 'Chandana Raju',
     post: 'SENIOR EDITOR',
     linkedin:
