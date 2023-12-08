@@ -29,7 +29,7 @@ function Board() {
           src="https://lottie.host/?file=dc229b20-4a86-4c49-b454-7a5023d86ab8/o7qpAuynA7.json"
           title="Animation"
         ></iframe>
-        <p>
+        <p >
           <section data-aos="zoom-in">
           Web Development board, an important wing of IEEE-SJCE is an exclusive
           committee for designing and maintaining the website and web pages of

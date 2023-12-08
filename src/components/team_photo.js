@@ -201,7 +201,7 @@ export const current_team_photo = [
   {
     id: 23,
     type: 'Electron Devices Society',
-    src: '/photos/members/Ashwin V Bhandari.jpg',
+    src: '/photos/members/Ashwin V Bhandari.JPG',
     name: 'Ashwin Vijayakumar Bhandari',
     post: 'SENIOR TECHNICAL CO-ORDINATOR',
     linkedin: 'https://www.linkedin.com/in/ashwin-bhandari396/',
@@ -373,13 +373,13 @@ export const current_team_photo = [
     src: '/photos/members/IMG20210307144705 1.jpg',
     name: 'Debojyoti Koley',
     post: 'CHAIRPERSON',
-    linkedin: 'https://www.linkedin.com/in/vineeth-rao-kuthnikar-bb1109284',
+    linkedin: 'https://www.linkedin.com/in/debojyoti-koley-2268071a8/',
     gmail: 'vineethk.rao@gmail.com',
   },
   {
     id: 41,
     type: 'web development board',
-    src: '/photos/members/Subroto.jpg',
+    src: '/photos/members/subroto.jpg',
     name: 'Subroto Koiry',
     post: 'CO-ORDINATOR',
     linkedin: 'https://www.linkedin.com/in/subroto-koiry  ',
@@ -689,7 +689,7 @@ export const senior2022_team_photo = [
   {
     id: 25,
     type: 'Electron Devices Society',
-    src: '/photos/members/Ashwin V Bhandari.jpg',
+    src: '/photos/members/Ashwin V Bhandari.JPG',
     name: 'Ashwin Vijayakumar Bhandari',
     post: 'TECHNICAL CO-ORDINATOR',
     linkedin: 'https://www.linkedin.com/in/ashwin-bhandari396/',

@@ -37,7 +37,8 @@ function Homepage() {
           </h2>
         </div>
         <div className="second-heading" data-aos="zoom-in">
-          <h2>IMAGINE ! - INNOVATE ! - INSPIRE !</h2>
+          <h2 className='largeScreen'>IMAGINE ! - INNOVATE ! - INSPIRE !</h2>
+          <h2 className='smallScreen'>IMAGINE ! INNOVATE ! INSPIRE !</h2>
         </div>
         <div>
           <p className="paragraph" data-aos="zoom-in">
@@ -135,6 +136,9 @@ const Container = styled.div`
         -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
     }
   }
+  .smallScreen{
+    display: none;
+  }
 
   @media screen and (max-width: 750px) {
     .introduction {
@@ -154,6 +158,14 @@ const Container = styled.div`
         color: #0077b6;
         -webkit-text-stroke: 0.5px black;
       }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .smallScreen{
+      display: block;
+    }
+    .largeScreen{
+      display: none;
     }
   }
 `

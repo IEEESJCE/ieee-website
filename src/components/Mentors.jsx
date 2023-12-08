@@ -21,7 +21,7 @@ function Mentors() {
       {
         id: 2,
         type: 'RAS ADVISOR',
-        src: '/photos/members/SUDARSHAN PK.jpeg',
+        src: '/photos/members/Sudarshan PK.jpeg',
         name: 'Dr. SUDARSHAN P K',
         linkedin:
           'https://www.linkedin.com/in/sudarshan-patilkulkarni-86178447/',
@@ -30,7 +30,7 @@ function Mentors() {
       {
         id: 3,
         type: 'EDS ADVISOR',
-        src: '/photos/members/SB RUDRASWAMY.jpg',
+        src: '/photos/members/SB Rudraswamy.jpg',
         name: 'Dr. S B RUDRASWAMY',
         linkedin: '',
         gmail: 'rudra.swamy@gmail.com',
@@ -38,7 +38,7 @@ function Mentors() {
       {
         id: 4,
         type: 'WIE ADVISOR',
-        src: '/photos/members/SUPREETHA M.jpg',
+        src: '/photos/members/Supreetha M.jpg',
         name: 'Ms. SUPREETHA M',
         linkedin: 'https://www.linkedin.com/in/supreetha-manjanna-65308415/',
         gmail: 'supreetha.manjann@sjce.ac.in',
@@ -46,7 +46,7 @@ function Mentors() {
       {
         id: 5,
         type: 'SBMDC ADVISOR',
-        src: '/photos/members/SHASHIDHAR R.jpg',
+        src: '/photos/members/Shashidhar R.jpg',
         name: 'Dr. SHASHIDHAR R',
         linkedin: 'https://www.linkedin.com/in/shashidhar-r-ph-d-ab6152123/',
         gmail: 'shashidhar.r@sjce.ac.in',

@@ -11,13 +11,13 @@ function Past_events() {
       date: '20th - 22nd January 2023',
       title: 'Soldering and Etching Workshop',
       img: 'photos/events/soldering_&_etching.jpeg',
-      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives sstudents a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
+      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
     },
     {
       id: 2,
       date: '13th - 15th April 2023',
       title: 'SQL Bootcamp',
-      img: 'photos/events/iot_workshop.jpeg',
+      img: 'photos/events/sql.jpg',
       content: `A 3 day online SQL Bootcamp where participants were taught the foundations of Structured Query Language - SQL. Students were tasked to build a solid backend component for the given front end! Learners were pumped up with the confidence to answer questions asked related to SQL during your placements.`,
     },
     {
@@ -55,24 +55,38 @@ function Past_events() {
       id: 6,
       date: '3rd-5th October 2023',
       title: 'IEEE Envision',
-      img: 'photos/events/iot_workshop.jpeg',
+      img: 'photos/events/ieee_envision.jpg',
       content: `On IEEE DAY, we celebrated global innovation, technology, and
               collaboration, driving progress and changing the world together.To
               celebrate this commitment, IEEE-SJCE has conducted IEEE-Envision,
-              a trio event series. Here is a glimpse of the electrifying events.
-              3rd October - Linux Tutelage 4th October - Coggle-Mindscape 5th
-              October - Ad Vintage.`,
+              a trio event series. Here is a glimpse of the electrifying events:-
+              Linux Tutelage, Coggle Mindscape, Ad-Vintage.`,
     },
     {
       id: 7,
       date: '3rd-4th November 2023',
       title: 'Fun-tastic Fiesta & Orientation Day',
-      img: 'photos/events/iot_workshop.jpeg',
+      img: 'photos/events/fun_event.jpg',
       content: `Fun-tastic Fiesta was a compilation of thrilling array of events
               where freshers had an opportunity to make new connections,
               rejuvenate, get together and have fun! Through Orientation day
               freshers took the opportunity to get to know about IEEE-SJCE and
               its activities. We also held a placement talk for the freshers.`,
+    },
+    {
+      id: 8,
+      date: '28-29th November 2023',
+      title: 'Snap Circuits',
+      img: 'photos/events/Snap_Circuits.jpg',
+      content: `The first event of Tuxedo tech-fest, Snap circuits provided a hands-on experience of electronic components and increased curiosity of electronic circuits and their working among freshers. It was an opportunity to gain knowledge and develop circuit building skills.`,
+    },
+    {
+      id: 9,
+      date: '30th November - 03rd December 2023',
+      title: 'Web Dev Bootcamp',
+      img: 'photos/events/web_dev_bootcamp.jpg',
+      content: `The second event of Tuxedo tech-fest, Web Development Bootcamp provides students with hands-on experience in building and designing interactive websites, acquire essential web development skills. 
+By the end of the workshop, students were able to build their own portfolio.`,
     },
   ]
    useEffect(() => {
@@ -114,7 +128,7 @@ function Past_events() {
                     >
                       {event.title}
                     </h3>
-                    <p style={{ fontSize: '1rem' }}>{event.content}</p>
+                    <p style={{ fontSize: '1rem',textAlign:'justify' }}>{event.content}</p>
                   </VerticalTimelineElement>
                 ) : (
                   <VerticalTimelineElement
@@ -138,7 +152,7 @@ function Past_events() {
                     >
                       {event.title}
                     </h3>
-                    <p style={{ fontSize: '1rem' }}>{event.content}</p>
+                    <p style={{ fontSize: '1rem',textAlign:'justify'}}>{event.content}</p>
                   </VerticalTimelineElement>
                 )}
               </>

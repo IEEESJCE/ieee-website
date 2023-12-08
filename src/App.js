@@ -8,10 +8,10 @@ import Societies from './pages/Societies';
 import Contact from './pages/Contact';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="*" element={<h1>Not Found 404</h1>} />
+        <Route path="/*" element={<h1>Not Found 404</h1>} />
         <Route path="/board" element={<Board />} />
         <Route path="/album" element={<Album />} />
         <Route path="/team" element={<Team />} />

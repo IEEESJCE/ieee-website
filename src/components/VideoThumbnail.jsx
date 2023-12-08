@@ -14,7 +14,7 @@ function VideoThumbnail() {
       <h1 className="small_heading" data-aos="fade">
         Videos
       </h1>
-        <hr className="hr-1" />
+      <hr className="hr-1" />
       <div className="video_thumbnail_container">
         <div className="video-gallery">
           <div className="gallery-item " data-aos="zoom-in">
@@ -81,14 +81,14 @@ function VideoThumbnail() {
             <div className="gallery-item-caption">
               <h2>Kalpana Chawla Memorial Lecture</h2>
               <p>
-                The talk will be presented by Mrs. N Valarmathi, Outstanding
-                Scientist and Deputy Director, ISRO (Retd.). She will be
-                delivering the lecture on the topic "Satellites and
-                Applications".
+                The talk was presented by Mrs. Roopa M.V.,Deputy Project
+                Director for Chandrayaan 3 Mission,ISRO on 9th December 2023.
+                She enlightend the students with her profound insights on
+                "Challenges Faced in Chandrayaan 3 Mission".
               </p>
               <a
                 className="vimeo-popup"
-                href="https://www.youtube.com/embed/6k2fxoUgSAM"
+                href="https://bit.ly/Kalpana_Chawla_Memorial_Lecture_2023"
               ></a>
             </div>
           </div>

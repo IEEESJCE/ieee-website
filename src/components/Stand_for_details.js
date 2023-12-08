@@ -2,7 +2,7 @@ const works = [
   {
     id: 1,
     work_name: 'Seminar',
-    work_img: '/photos/events/seminars.jpeg',
+    work_img: '/photos/events/Seminars.jpeg',
     work_description:
       'IEEE-SJCE conducts many technical talks, seminars and panel discussions during its technical fests.PAPYRUS encourages students to write technical papers.',
   },

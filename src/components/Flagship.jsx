@@ -13,15 +13,15 @@ function Flagship() {
       {
         id: 1,
         heading: 'IEEE R10 HTC',
-        content:
-          'Welcome to the 2nd edition of IEEE Bangalore Technology Conclave (BTC) on the theme Clean Technologies for a Sustainable World. IEEE BTC 2021 is a flagship event of IEEE Bangalore Section, organized in collaboration with its two affinity groups - Women in Engineering (WiE) and Young Professionals (YP).',
         link: 'https://attend.ieee.org/r10htc-2021/',
+        content:
+          'IEEE Region 10 Humanitarian Technology Conference (R10 HTC) is a premier annual cross-disciplinary conference. It provides a common platform for engineers, technologists, scientists, representatives from NGOs, governments, academia, industry and investors to discuss recent advances in Humanitarian Technologies.',
       },
       {
         id:2,
         heading: 'IEEE BTC',
         content:
-          'IEEE Region 10 Humanitarian Technology Conference (R10 HTC) is a premier annual cross-disciplinary conference. It provides a common platform for engineers, technologists, scientists, representatives from NGOs, governments, academia, industry and investors to discuss recent advances in Humanitarian Technologies.',
+          'Welcome to the 2nd edition of IEEE Bangalore Technology Conclave (BTC) on the theme Clean Technologies for a Sustainable World. IEEE BTC 2021 is a flagship event of IEEE Bangalore Section, organized in collaboration with its two affinity groups - Women in Engineering (WiE) and Young Professionals (YP).',
         link: 'https://btc-2021.ieeebangalore.org/',
       },
       {

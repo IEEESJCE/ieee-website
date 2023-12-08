@@ -65,6 +65,26 @@ export const photos = [
     height: 1,
   },
   {
+    src:'/photos/gallery/album/web_dev_bootcamp1.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/web_dev_bootcamp2.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/web_dev_bootcamp3.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/snap_circuit1.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
     src: '/photos/gallery/album/DSC_0942.JPG',
     width: 1,
     height: 1,
@@ -84,4 +104,15 @@ export const photos = [
     width: 1,
     height: 1,
   },
+  {
+    src: '/photos/gallery/album/IMG_2024.jpg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/photos/gallery/album/snap_circuit2.jpg',
+    width: 1,
+    height: 1,
+  },
+  
 ]
