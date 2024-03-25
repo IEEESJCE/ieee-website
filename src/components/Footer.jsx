@@ -16,7 +16,7 @@ return (
           <br />
           Mysuru, 570006
           <br />
-          Phone: +(91) 8762361434
+          Phone: +(91) 7829478991
           <br />
           Email: ieeesjce2019@gmail.com
         </p>
