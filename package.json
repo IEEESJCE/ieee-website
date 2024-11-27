@@ -1,6 +1,6 @@
 {
   "name": "ieee-website",
-  "homepage": "https://www.ieeesjce.com/",
+  "homepage": "https://www.ieeesjce.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
