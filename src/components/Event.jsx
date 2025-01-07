@@ -20,7 +20,7 @@ function Event() {
 
       <div className="new_event" id="new_event_1" data-aos="zoom-in">
         <img
-          src="/photos/events/wdb-recruitment.jpeg"
+          src="\public\photos\events\WhatsApp Image 2025-01-05 at 09.53.46_d018186d.jpg"
           alt=""
           data-aos="zoom-in"
         />
