@@ -19,109 +19,51 @@ function Event() {
       </div>
 
       <div className="new_event" id="new_event_1" data-aos="zoom-in">
-        <img
-          src="\public\photos\events\WhatsApp Image 2025-01-05 at 09.53.46_d018186d.jpg"
-          alt=""
-          data-aos="zoom-in"
-        />
+      <img
+        src="/photos/events/soldering&etching.jpeg"
+        alt="Soldering and Etching"
+        data-aos="zoom-in"
+      />
 
-        {/* <div className="inside_box">
-          <h1> WDB Recruitment</h1>
-          <p data-aos="zoom-in">
-            Hola coders! 🙌
-            <br />
-            Greetings from IEEE-SJCE! ✨
-            <br />
-            <br />
-            The RAS wing of IEEE-SJCE presents its annual event
-            <br />
-            <br />
-            <b style={{ color: '#0095da' }}>👨‍💻 Python Bootcamp 👩‍💻 </b>
-            <br />
-            <br />
-            Are you a student aiming to kickstart your programming journey? 🤩
-            <br />
-            <br />
-            The Python Bootcamp provides a well-organized approach for learning
-            to program in Python. 👩‍💻
-            <br />
-            This bootcamp is designed for beginners seeking to develop strong
-            coding skills. 🥳
-            <br />
-            <br />
-            The ability to program in Python gives prospective developers access
-            to a multitude of job opportunities, from scripting to data science.
-            🤯 
-            <br />
-            <br />
-            Join us and unlock the potential of Python for your coding journey!
-            <br />
-            <br />
-            <b style={{ color: '#0095da' }}>Registration is FREE! 🎉</b>
-            <br />
-            <br />
-            🗓 Date:{' '}
-            <b style={{ color: '#0095da' }}>9th, 10th & 11th February</b>
-            <br />
-            📍 Platform : <b style={{ color: '#0095da' }}>Google Meet</b>
-            <br />
-            <br />
-            Sign up now! 🤩
-            <br />
-            <br />
-            For any queries, contact:
-            <br />
-            Sudhanva: +91 <b style={{ color: '#0095da' }}> 7619618003</b>
-            <br />
-            Rishabh: +91 <b style={{ color: '#0095da' }}> 6201165099</b>
-            <br />
-          </p>
-          <button className="btn">
-            {' '}
-            <a
-              style={{ textDecoration: 'none', color: 'white' }}
-              href="https://bit.ly/PYTHON_BOOTCAMP_2024"
-            >
-              Register Now
-            </a>
-          </button>
-        </div> */}
+
         <div className="inside_box">
-          <h1>WDB Recruitment</h1>
+          <h1>Soldering and Etching Workshop</h1>
           <p data-aos="zoom-in">
-            Passionate about web development? Ready to explore new opportunities
-            in this field? Let your creativity shine with us! 🎉
+          Ever wondered how the components are placed on the PCB? Curious to learn how exactly PCBs work?
+          Then get ready to dive into the fascinating world of PCB designing! 🔌
+
             <br />
             <br />
-            We are looking for enthusiastic web developers to join the Web
-            Development Board of IEEE-SJCE. 👩‍💻
+            The EDS wing of IEEE-SJCE presents you with the flagship event,<br />🪛 Soldering and Etching 🪛Workshop
             <br />
             <br />
-            Requirements: Knowledge of HTML, CSS, and JavaScript. Familiarity
-            with NodeJs and ReactJS is a plus. 😇
-            <br />
-            <br />
-            Open to second-year students only.
+            Step into the exciting world of PCB design which gives you hands-on experience in designing, etching, and soldering the circuit boards from scratch.⚙ By the end of the workshop, you'll be fully capable of soldering, etching, and skillfully designing your own circuit boards! 🛩
             <br />
             <br />
             If you're interested, please complete the Google Form:
             <br />
             <br />
-            Become a part of IEEE-SJCE and start an exciting journey with our
-            club!
+            Participate in a team of 2.<br />
+            Registration fee (per person, exclusive of kit):<br />
+             IEEE Members with EDS: Rs. 99/-<br />
+             IEEE Members without EDS: Rs. 399/-<br />
+            Non-IEEE Members: Rs. 599/-<br />
+
+            Kit price: Rs. 699/-
             <br />
             <br />
-            Apply by July 23, 2024.
+            🗓 Date: 10th, 11th, and 12th January 2025<br />
+            📍 Venue: Seminar Hall, 1st floor CMS Block
             <br />
             <br />
             For more information, contact:
             <br />
-            Subroto: <b style={{ color: '#0095da' }}>9065619225</b>
+            Gagan: <b style={{ color: '#0095da' }}>9902068272</b>
           </p>
           <button className="btn">
             <a
               style={{ textDecoration: 'none', color: 'white' }}
-              href="https://bit.ly/IEEE_SJCE_WEB_DEVELOPMENT_REGISTRATION"
+              href="https://bit.ly/Soldering_and_Etching_Registration_form"
             >
               Register Now
             </a>
