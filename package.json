@@ -26,11 +26,12 @@
     "styled-components": "^6.0.7",
     "web-vitals": "^2.1.4"
   },
+
   "overrides": {
-    "react-photo-gallery": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0"
-    }
+      "react-photo-gallery": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+      }
   },
   "scripts": {
     "start": "react-scripts start",
