@@ -17,19 +17,19 @@ function Caraousel() {
         showStatus={false}
       >
         <div>
-          <img src="/photos/gallery/caraousel/sl1.jpg" alt="" />
+          <img src="/photos/gallery/caraousel/IMG_5944.JPG" alt="" />
         </div>
         <div>
-          <img src="/photos/gallery/caraousel/_DSC0058.jpg" alt="" />
+          <img src="/photos/gallery/caraousel/IMG_0350.JPG" alt="" />
         </div>
         <div>
-          <img src="/photos/gallery/caraousel/IMG_2770.JPG" alt="" />
+          <img src="/photos/gallery/caraousel/IMG_3552.JPG" alt="" />
         </div>
         <div>
-          <img src="/photos/gallery/caraousel/20230604_182334.jpg" alt="" />
+          <img src="/photos/gallery/caraousel/IMG_3103.JPG" alt="" />
         </div>
         <div>
-          <img src="/photos/gallery/caraousel/sl5.jpeg" alt="" />
+          <img src="/photos/gallery/caraousel/IMG_6602.JPG" alt="" />
         </div>
       </Carousel>
     </div>

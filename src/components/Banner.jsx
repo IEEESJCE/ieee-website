@@ -8,7 +8,7 @@ function Banner() {
       <div className="banner-div overlay">
         <img
           className="banner"
-          src="/photos/gallery/sl1-mobile.jpg"
+          src="/photos/gallery/caraousel/IMG_5944.JPG"
           alt="banner"
         />
         <h3 className="welcome_title">

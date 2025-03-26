@@ -8,22 +8,22 @@ function Past_events() {
   const pastEvents = [
     {
       id: 1,
-      date: '20th - 22nd January 2023',
-      title: 'Soldering and Etching Workshop',
-      img: 'photos/events/soldering_&_etching.jpeg',
-      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
+      date: '11th February 2025',
+      title: 'AI Expert Talk and Ideathon',
+      img: '/photos/events/Screenshot 2025-03-26 212852.png',
+      content: `STRONG - Scientific Research for NextGen GirlGeeks was organized by the MCAA India Chapter, funded by the European Union, and supported by the MCAA-Mednight Project, IEEE Mysore Subsection, and IEEE-SJCE. The event aimed to inspire young women to pursue careers in science and research.`,
     },
     {
       id: 2,
-      date: '13th - 15th April 2023',
-      title: 'SQL Bootcamp',
-      img: 'photos/events/sql.jpg',
-      content: `A 3 day online SQL Bootcamp where participants were taught the foundations of Structured Query Language - SQL. Students were tasked to build a solid backend component for the given front end! Learners were pumped up with the confidence to answer questions asked related to SQL during your placements.`,
+      date: '10th - 12th January 2025',
+      title: 'Soldering and Etching Workshop',
+      img: '/photos/events/soldering&etching.jpeg',
+      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
     },
     {
       id: 3,
-      date: '28th - 30th April 2023',
-      title: 'IOT Workshop',
+      date: '29th - 30th Nov and 1st Dec 2024',
+      title: 'IOT-3.0  Workshop',
       img: 'photos/events/iot_workshop.jpeg',
       content: `A 3-day workshop with a lot of learning and interesting hands-on
               sessions.We will be covering protocols and all the other important

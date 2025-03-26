@@ -1,25 +1,73 @@
-.our-team{
+.our-team {
     text-align: center;
-}
-.our-team .team-image{
+    position: relative;
+    padding: 30px 20px;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    transform: translateY(0);
+  }
+  
+  .our-team:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(78, 162, 241, 0.1);
+  }
+  
+  /* Image and border effects */
+  .our-team .team-image {
     width: 200px;
-    height:200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #bedff9;
     position: relative;
     margin: auto;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .team-image{
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 5px 20px rgba(78, 162, 241, 0.2);
+    z-index: 1;
+  }
+  
+  .our-team:hover .team-image {
     border-color: #39bcf0;
-}
-.our-team .team-image img{
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(57, 188, 240, 0.35);
+  }
+  
+  .our-team .team-image::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(57, 188, 240, 0.15), rgba(78, 162, 241, 0.15));
+    z-index: -1;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .our-team:hover .team-image::before {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  
+  .our-team .team-image img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-}
-.our-team .social{
+    transition: all 0.5s ease;
+    filter: saturate(0.9) brightness(1);
+  }
+  
+  .our-team:hover .team-image img {
+    filter: saturate(1.1) brightness(1.05);
+    transform: scale(1);
+  }
+  
+  /* Social icons styling */
+  .our-team .social {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -28,75 +76,225 @@
     top: 40%;
     opacity: 0;
     transform: scale(0);
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .social{
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .our-team:hover .social {
     opacity: 1;
     transform: scale(1);
-    animation: 0.5s ease 0s normal 1 bounce;
-}
-.our-team .social li{
+    animation: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0s normal 1 bounce;
+  }
+  
+  .our-team .social li {
     display: inline-block;
     border-radius: 50%;
-}
-.our-team .social li:first-child{
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .our-team .social li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .our-team .social li:first-child {
     margin-left: -20px;
     float: left;
-}
-.our-team .social li:last-child{
+  }
+  
+  .our-team .social li:last-child {
     margin-right: -20px;
     float: right;
-}
-.our-team .social li a{
-    display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+  }
+  
+  .our-team .social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #ffffff;
     font-size: 20px;
     color: #39bcf0;
     border: 3px solid #39bcf0;
-}
-
-.our-team .team-content{
-    padding: 10px 50px;
-}
-.our-team .title{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .our-team .social li a:hover {
+    background-color: #39bcf0;
+    color: #ffffff;
+    transform: rotate(360deg);
+    box-shadow: 0 5px 15px rgba(57, 188, 240, 0.4);
+  }
+  
+  .our-team .social li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .our-team .social li a:hover::before {
+    opacity: 0.2;
+  }
+  
+  /* Content styling */
+  .our-team .team-content {
+    padding: 25px 20px 10px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+  
+  .our-team:hover .team-content {
+    transform: translateY(5px);
+  }
+  
+  .our-team .title {
     font-size: 24px;
     color: #4ea2f1;
-    margin: 0 0 10px 0;
-}
-.our-team .description{
+    margin: 15px 0 5px 0;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .our-team:hover .title {
+    color: #39bcf0;
+  }
+  
+  .our-team .title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #39bcf0;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+  }
+  
+  .our-team:hover .title::after {
+    width: 50px;
+  }
+  
+  .our-team .description {
     font-size: 14px;
-    color:#b8c0e7;
+    color: #b8c0e7;
     line-height: 25px;
-    margin: 0;
-}
-@keyframes bounce{
-    0%{
-        opacity:0;
-        -webkit-transform:scale(.3);
-        transform:scale(.3)
+    margin: 10px 0 0;
+    transition: all 0.5s ease;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .our-team:hover .description {
+    color: #c9d1f8;
+  }
+  
+  /* Improved bounce animation */
+  @keyframes bounce {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
     }
-    50%{
-        opacity:1;
-         -webkit-transform:scale(1.05);
-         transform:scale(1.05)
+    40% {
+      opacity: 0.8;
+      transform: scale(1.15);
     }
-    70%{
-        -webkit-transform:scale(.9);
-        transform:scale(.9)
+    60% {
+      opacity: 1;
+      transform: scale(0.9);
     }
-    100%{
-        opacity:1;
-        -webkit-transform:scale(1);
-        transform:scale(1)
+    80% {
+      transform: scale(1.05);
     }
-}
-@media screen and (max-width: 990px){
-    .our-team{ margin-bottom: 20px; }
-}
-
-/* profile card link */
-/* https://bestjquery.com/tutorial/our-team/demo38/ */
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Add a subtle floating animation */
+  .our-team:hover {
+    animation: float 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(-12px);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 990px) {
+    .our-team {
+      margin-bottom: 40px;
+    }
+    
+    .our-team .team-image,
+    .our-team .team-image img {
+      width: 180px;
+      height: 180px;
+    }
+    
+    .our-team .social li a {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .our-team .team-image,
+    .our-team .team-image img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .our-team .title {
+      font-size: 20px;
+    }
+  }
+  
+  /* Add staggered entrance animation for multiple team members */
+  .team-container .our-team {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: teamAppear 0.8s forwards;
+  }
+  
+  .team-container .our-team:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .team-container .our-team:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .team-container .our-team:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes teamAppear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

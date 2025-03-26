@@ -69,7 +69,7 @@ return (
     </div>
     <div className="footer">
       <p>
-        Copyrights © 2023 IEEE-SJCE | Developed by the WBD Board at IEEE-SJCE
+        Copyrights © 2024 IEEE-SJCE | Developed by the WBD Board at IEEE-SJCE
       </p>
       {/* <!-- <hr> --> */}
     </div>
