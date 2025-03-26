@@ -9,7 +9,7 @@ import {
 import '../css/team.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Caraousel from '../components/Caraousel'
+// import Caraousel from '../components/Caraousel'
 
 function Team() {
   var hide = document.getElementsByClassName('hide')
@@ -43,7 +43,8 @@ function Team() {
       <p className="paragraph" data-aos="zoom-in">
         Our Team Members who have contributed immensely to our Growth
       </p>
-      <Caraousel />
+      <div className="team-container" data-aos="fade-up">
+      </div>
       <div className="executive_committe">
         <h1 className="small_heading" id="team_execom_id" data-aos="fade">
           EXECUTIVE COMMITTEE
