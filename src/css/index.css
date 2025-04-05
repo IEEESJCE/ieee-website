@@ -1,139 +1,199 @@
-/* Add this at the top of your CSS */
+/* Modern Gallery Component - Core Variables */
 :root {
-  --gallery-z-index: 999; /* Ensure gallery stays on top */
-  --gallery-fallback-bg: rgba(13, 23, 23, 0.95); /* Match your theme */
+  --gallery-z-index: 999;
+  --gallery-fallback-bg: rgba(13, 23, 23, 0.95);
+  --gallery-accent: #0095da;
+  --gallery-animation-duration: 0.3s;
+  --gallery-border-radius: 1rem;
+  --gallery-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
-/* Gallery Compatibility Layer */
+/* Gallery Container - Modern Approach */
 .gallery-container {
   position: relative;
-  isolation: isolate; /* Create new stacking context */
+  isolation: isolate;
   min-height: 60vh;
   margin: 2rem 0;
-  transform-style: preserve-3d; /* Match your 3D theme */
+  transform-style: preserve-3d;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  
+  /* Force hardware acceleration */
+  backface-visibility: hidden;
+  will-change: transform;
+  
+  /* Modern Animation */
+  animation: galleryEntry 0.5s cubic-bezier(0.2, 0.85, 0.4, 1) both;
 }
 
-/* Force gallery item positioning */
-.ReactGridGallery_tile-view div {
-  position: relative !important;
-  overflow: hidden !important;
-  backface-visibility: hidden !important;
-  transform: translateZ(0) !important; /* Force hardware acceleration */
-}
-
-/* Image fallback handling */
-.ReactGridGallery_tile img {
-  object-fit: cover !important;
-  width: 100% !important;
-  height: 100% !important;
-  transition: opacity 0.3s ease !important;
-}
-
-/* Override inline styles from gallery */
-div[style*="position: absolute"] {
-  position: relative !important;
-  transform: none !important;
-}
-
-/* Touch interaction fixes */
+/* Tile Improvements */
 .ReactGridGallery_tile {
-  touch-action: manipulation !important; /* Prevent scroll takeover */
+  border-radius: var(--gallery-border-radius);
+  overflow: hidden;
+  box-shadow: var(--gallery-shadow);
+  position: relative;
+  touch-action: manipulation;
+  
+  /* Performance Optimizations */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  
+  /* Modern Transitions */
+  transition: transform var(--gallery-animation-duration) cubic-bezier(0.2, 0.85, 0.4, 1),
+              box-shadow var(--gallery-animation-duration) cubic-bezier(0.2, 0.85, 0.4, 1);
 }
 
-/* Loading state */
+/* Enhanced Image Handling */
+.ReactGridGallery_tile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  
+  /* Modern Image Transitions */
+  transition: transform var(--gallery-animation-duration) cubic-bezier(0.2, 0.85, 0.4, 1),
+              filter var(--gallery-animation-duration) cubic-bezier(0.2, 0.85, 0.4, 1);
+}
+
+/* Hover Effects with Modern Approach */
+.ReactGridGallery_tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--gallery-shadow), 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ReactGridGallery_tile:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1) contrast(1.05) saturate(1.02);
+}
+
+/* Loading State - Modern Spinner */
+.gallery-loading {
+  position: relative;
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+}
+
 .gallery-loading::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 40px;
   height: 40px;
-  border: 3px solid var(--gallery-fallback-bg);
-  border-top-color: #0095da;
+  border: 3px solid transparent;
+  border-top-color: var(--gallery-accent);
   border-radius: 50%;
-  animation: gallery-spin 1s linear infinite;
+  animation: gallery-spin 0.8s cubic-bezier(0.2, 0.85, 0.4, 1) infinite;
+}
+
+/* Error State - Modern Design */
+.gallery-error {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: var(--gallery-fallback-bg);
+  border: 2px solid rgba(0, 149, 218, 0.2);
+  border-radius: var(--gallery-border-radius);
+  color: white;
+  font-weight: 500;
+}
+
+/* Modern Animations */
+@keyframes galleryEntry {
+  from { 
+    opacity: 0;
+    transform: scale(0.98) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 @keyframes gallery-spin {
   to { transform: rotate(360deg); }
 }
 
-/* Error fallback */
-.gallery-error {
-  display: grid;
-  place-items: center;
-  padding: 2rem;
-  background: var(--gallery-fallback-bg);
-  border: 2px solid #0095da33;
-  border-radius: 1rem;
+/* Focus Styles for Accessibility */
+.ReactGridGallery_tile:focus-within {
+  outline: 2px solid var(--gallery-accent);
+  outline-offset: 2px;
 }
 
-/* Animation compatibility fixes */
-@media (prefers-reduced-motion: reduce) {
-  .ReactGridGallery_tile * {
-    animation: none !important;
-    transition: none !important;
+/* Enhanced Responsive Design */
+@media screen and (max-width: 1200px) {
+  .gallery-container {
+    gap: 0.75rem;
   }
 }
 
-/* Print fixes */
-@media print {
-  .ReactGridGallery_tile {
-    page-break-inside: avoid !important;
-  }
-}
-
-/* Add these to your existing animations */
-@keyframes galleryEntry {
-  from { 
-    opacity: 0;
-    transform: scale(0.95) rotateX(10deg);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) rotateX(0);
-  }
-}
-
-.gallery-container {
-  animation: galleryEntry 1s ease both;
-}
-
-/* Add to your existing media queries */
 @media screen and (max-width: 750px) {
+  .gallery-container {
+    gap: 0.5rem;
+  }
+  
   .ReactGridGallery_tile {
     width: 100% !important;
     height: auto !important;
     min-height: 200px !important;
-  }
-  
-  .ReactGridGallery_tile img {
-    object-position: center center !important;
+    border-radius: calc(var(--gallery-border-radius) * 0.75);
   }
 }
 
-/* Add these to your hover effects */
-.ReactGridGallery_tile:hover img {
-  transform: scale(1.05) !important;
-  filter: brightness(1.1) contrast(1.05) !important;
+/* Prefers Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-container,
+  .ReactGridGallery_tile,
+  .ReactGridGallery_tile img {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .ReactGridGallery_tile:hover {
+    transform: none;
+  }
+  
+  .gallery-loading::after {
+    animation: none !important;
+    border: 3px solid var(--gallery-accent);
+  }
+}
+
+/* Print Optimization */
+@media print {
+  .gallery-container {
+    display: block;
+    animation: none;
+  }
+  
+  .ReactGridGallery_tile {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gallery-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+  
+  .ReactGridGallery_tile {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Support for custom dark mode toggle class */
+.dark-mode .ReactGridGallery_tile {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Z-index management */
-.ReactGridGallery_tile > div {
-  z-index: var(--gallery-z-index) !important;
+.gallery-modal-open {
+  z-index: var(--gallery-z-index);
 }
 
-/* Add this to your existing gradient background */
-body::before {
-  z-index: calc(var(--gallery-z-index) - 1); /* Stay behind gallery */
-}
-
-/* Force repaint on gallery updates */
-.gallery-container {
-  will-change: transform, opacity;
-}
-
-/* Add this to your dark mode toggle */
-.dark-mode-toggle {
-  z-index: calc(var(--gallery-z-index) + 1); /* Stay above gallery */
+/* Positioning fixes */
+.ReactGridGallery_tile-viewport {
+  position: relative !important;
 }

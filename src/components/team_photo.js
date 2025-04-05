@@ -134,7 +134,7 @@ export const current_team_photo = [
     id: 16,
     type: 'executive_committee',
     src: '',
-    name: 'SuraJ',
+    name: 'Suraj',
     post: 'STUDENT COORDINATOR',
     linkedin:
       '',

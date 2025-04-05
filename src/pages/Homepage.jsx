@@ -1,7 +1,7 @@
 import {React, useEffect, useState} from 'react'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
-import Confetti from 'react-confetti'
+// import Confetti from 'react-confetti'
 import Event from '../components/Event'
 import styled from 'styled-components'
 import Past_events from '../components/Past_events'
@@ -20,30 +20,30 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 function Homepage() {
-  const [confettiActive, setConfettiActive] = useState(true);
+  // const [confettiActive, setConfettiActive] = useState(true);
   
-  useEffect(() => {
-    AOS.init({
-      duration: 1300,
-      once: false,
-      mirror: true,
-      easing: 'ease-out-cubic'
-    });
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1300,
+  //     once: false,
+  //     mirror: true,
+  //     easing: 'ease-out-cubic'
+  //   });
     
-    // Limit confetti duration
-    const timer = setTimeout(() => {
-      setConfettiActive(false);
-    }, 8000);
+  //   // Limit confetti duration
+  //   const timer = setTimeout(() => {
+  //     setConfettiActive(false);
+  //   }, 8000);
     
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <Container>
       <BackgroundEffect />
       <Navbar />
       <Banner />
-      {confettiActive && <Confetti height={window.innerHeight} width={window.innerWidth} recycle={false} numberOfPieces={200} />}
+      {/* {confettiActive && <Confetti height={window.innerHeight} width={window.innerWidth} recycle={false} numberOfPieces={200} />} */}
       
       <div className="introduction" id="introduction_part">
         <div className="first-heading">
