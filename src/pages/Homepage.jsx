@@ -22,13 +22,16 @@ import 'aos/dist/aos.css'
 function Homepage() {
   // const [confettiActive, setConfettiActive] = useState(true);
   
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1300,
-  //     once: false,
-  //     mirror: true,
-  //     easing: 'ease-out-cubic'
-  //   });
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+      once: false,
+      mirror: true,
+      easing: 'ease-out-cubic'
+    });
+    AOS.refresh();
+  }, []);
+  
     
   //   // Limit confetti duration
   //   const timer = setTimeout(() => {
