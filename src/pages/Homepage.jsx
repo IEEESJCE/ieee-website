@@ -1,53 +1,69 @@
-import {React, useEffect, useState} from 'react'
-import Navbar from '../components/Navbar'
-import Banner from '../components/Banner'
-// import Confetti from 'react-confetti'
-import Event from '../components/Event'
-import styled from 'styled-components'
-import Past_events from '../components/Past_events'
-import '../css/index.css'
-import Caraousel from '../components/Caraousel'
-import Stand_for from '../components/Stand_for' 
-import Milestone_events from '../components/Milestone_events'
-import Achievements from '../components/Achievements'
-import Bangalore_Flagship from '../components/Bangalore_Flagship'
-import Flagship from '../components/Flagship'
-import Prayas from '../components/Prayas'
-import Mentors from '../components/Mentors'
-import Sponsor from '../components/Sponsor'
-import Footer from '../components/Footer'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React, { Suspense, lazy, useEffect } from 'react';
+import Navbar from '../components/Navbar';
+import '../css/index.css';
+import '../css/Banner.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import styled from 'styled-components';
+// Import CarouselComponent directly (not lazy-loaded for the banner)
+import CarouselComponent from '../components/Caraousel';
+
+// Lazy load components with PascalCase names
+const Event = lazy(() => import('../components/Event'));
+// const Carousel = lazy(() => import('../components/Caraousel')); // Removed unused import
+const PastEvents = lazy(() => import('../components/Past_events'));
+const MilestoneEvents = lazy(() => import('../components/Milestone_events'));
+const Achievements = lazy(() => import('../components/Achievements'));
+const StandFor = lazy(() => import('../components/Stand_for'));
+const BangaloreFlagship = lazy(() => import('../components/Bangalore_Flagship'));
+const Flagship = lazy(() => import('../components/Flagship'));
+const Prayas = lazy(() => import('../components/Prayas'));
+const Mentors = lazy(() => import('../components/Mentors'));
+const Sponsor = lazy(() => import('../components/Sponsor'));
+const Footer = lazy(() => import('../components/Footer'));
+
+function BannerComponent() {
+  return (
+    <div className="banner-container">
+      <div className="banner-overlay">
+        <div className="banner-content">
+          <h3 className="welcome-title">
+            <span>Welcome To</span>
+          </h3>
+          <div className="club-name">
+            <h1 className="animate-character">IEEE SJCE</h1>
+          </div>
+          <div className="explore-button-container">
+            <button className="explore-button">
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Homepage() {
-  // const [confettiActive, setConfettiActive] = useState(true);
-  
   useEffect(() => {
     AOS.init({
       duration: 1300,
-      once: false,
-      mirror: true,
+      once: true,
+      mirror: false,
       easing: 'ease-out-cubic'
     });
     AOS.refresh();
   }, []);
-  
-    
-  //   // Limit confetti duration
-  //   const timer = setTimeout(() => {
-  //     setConfettiActive(false);
-  //   }, 8000);
-    
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   return (
     <Container>
       <BackgroundEffect />
       <Navbar />
-      <Banner />
-      {/* {confettiActive && <Confetti height={window.innerHeight} width={window.innerWidth} recycle={false} numberOfPieces={200} />} */}
-      
+      <div className="banner-wrapper">
+        <CarouselComponent />
+        <BannerComponent />
+      </div>
+
       <div className="introduction" id="introduction_part">
         <div className="first-heading">
           <h2 data-aos="fade-down">
@@ -68,27 +84,28 @@ function Homepage() {
           </div>
         </div>
       </div>
-      
+
       <div className="section-divider">
         <div className="divider-line"></div>
         <div className="divider-icon"></div>
         <div className="divider-line"></div>
       </div>
-      
-      <Event />
-      <Caraousel />
-      <Past_events />
-      <Milestone_events />
-      <Achievements />
-      <Stand_for />
-      <Bangalore_Flagship />
-      <Flagship />
-      <Prayas />
-      <Mentors />
-      <Sponsor />
-      <Footer />
+
+      <Suspense fallback={<div className="loading-section">Loading...</div>}>
+        <Event />
+        <PastEvents />
+        <MilestoneEvents />
+        <Achievements />
+        <StandFor />
+        <BangaloreFlagship />
+        <Flagship />
+        <Prayas />
+        <Mentors />
+        <Sponsor />
+        <Footer />
+      </Suspense>
     </Container>
-  )
+  );
 }
 
 const BackgroundEffect = styled.div`
@@ -97,13 +114,12 @@ const BackgroundEffect = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    radial-gradient(circle at 15% 30%, rgba(32, 133, 222, 0.08) 0%, transparent 25%),
-    radial-gradient(circle at 85% 20%, rgba(100, 65, 255, 0.05) 0%, transparent 35%),
-    radial-gradient(circle at 50% 80%, rgba(32, 133, 222, 0.07) 0%, transparent 35%);
+  background:
+    radial-gradient(circle at 15% 30%, rgba(32, 133, 222, 0.05) 0%, transparent 25%),
+    radial-gradient(circle at 85% 20%, rgba(100, 65, 255, 0.03) 0%, transparent 35%);
   pointer-events: none;
   z-index: -1;
-  
+
   &:after {
     content: '';
     position: absolute;
@@ -111,16 +127,8 @@ const BackgroundEffect = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(10, 15, 30, 0.2) 0%, rgba(10, 15, 30, 0.1) 100%);
-    background-size: 200% 200%;
-    animation: gradientFlow 15s ease infinite;
+    background: linear-gradient(to bottom, rgba(10, 15, 30, 0.1) 0%, rgba(10, 15, 30, 0.05) 100%);
     z-index: -1;
-  }
-  
-  @keyframes gradientFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
   }
 `;
 
@@ -130,21 +138,27 @@ const Container = styled.div`
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   position: relative;
-  
-  /* Section Divider */
+
+  .loading-section {
+    text-align: center;
+    padding: 3rem;
+    color: #2085de;
+    font-size: 1.5rem;
+  }
+
   .section-divider {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 3rem 0;
     padding: 0 2rem;
-    
+
     .divider-line {
       height: 1px;
       flex-grow: 1;
       background: linear-gradient(90deg, transparent 0%, rgba(32, 133, 222, 0.5) 50%, transparent 100%);
     }
-    
+
     .divider-icon {
       width: 12px;
       height: 12px;
@@ -152,7 +166,7 @@ const Container = styled.div`
       transform: rotate(45deg);
       margin: 0 15px;
       position: relative;
-      
+
       &:before, &:after {
         content: '';
         position: absolute;
@@ -161,13 +175,13 @@ const Container = styled.div`
         border: 1px solid rgba(32, 133, 222, 0.5);
         animation: pulse 2s infinite;
       }
-      
+
       &:after {
         animation-delay: 1s;
       }
     }
   }
-  
+
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -179,14 +193,13 @@ const Container = styled.div`
     }
   }
 
-  /* Introduction */
   .introduction {
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 5% 10%;
-    
+
     .first-heading h2 {
       text-align: center;
       font-family: 'Space Grotesk', sans-serif;
@@ -208,14 +221,14 @@ const Container = styled.div`
       animation: neonGlow 5s ease-in-out infinite alternate;
       margin: 1.5rem 0;
     }
-    
+
     .paragraph-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 1.5rem;
     }
-    
+
     .paragraph {
       text-align: center;
       max-width: 700px;
@@ -224,11 +237,11 @@ const Container = styled.div`
       line-height: 1.8;
       color: rgba(255, 255, 255, 0.8);
     }
-    
+
     .glowing-button-container {
       margin-top: 1.5rem;
     }
-    
+
     .glowing-button {
       background: linear-gradient(45deg, #2085de, #4a75e6);
       color: white;
@@ -243,15 +256,15 @@ const Container = styled.div`
       overflow: hidden;
       transition: all 0.3s ease;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 20px rgba(32, 133, 222, 0.5), 
+      box-shadow: 0 0 20px rgba(32, 133, 222, 0.5),
                   inset 0 0 10px rgba(255, 255, 255, 0.2);
-      
+
       &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 0 30px rgba(32, 133, 222, 0.8), 
+        box-shadow: 0 0 30px rgba(32, 133, 222, 0.8),
                     inset 0 0 15px rgba(255, 255, 255, 0.3);
       }
-      
+
       &:before {
         content: '';
         position: absolute;
@@ -262,57 +275,49 @@ const Container = styled.div`
         background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
         transition: all 0.5s;
       }
-      
+
       &:hover:before {
         left: 100%;
       }
     }
   }
-  
+
   @keyframes neonGlow {
     0% {
       color: #2085de;
-      text-shadow: 
+      text-shadow:
         0 0 10px rgba(32, 133, 222, 0.8),
         0 0 20px rgba(32, 133, 222, 0.5),
         0 0 30px rgba(32, 133, 222, 0.3);
     }
     50% {
       color: #4a9eff;
-      text-shadow: 
+      text-shadow:
         0 0 15px rgba(74, 158, 255, 0.8),
         0 0 25px rgba(74, 158, 255, 0.5),
         0 0 35px rgba(74, 158, 255, 0.3);
     }
     100% {
       color: #2085de;
-      text-shadow: 
+      text-shadow:
         0 0 10px rgba(32, 133, 222, 0.8),
         0 0 20px rgba(32, 133, 222, 0.5),
         0 0 30px rgba(32, 133, 222, 0.3);
     }
   }
 
-  /* Particle Effect */
-  @keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(5deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-  }
-
   .smallScreen {
     display: none;
   }
 
-  /* Media Queries */
   @media screen and (max-width: 1024px) {
     .introduction {
       padding: 5% 5%;
-      
+
       .first-heading h2 {
         font-size: 1.7rem;
       }
-      
+
       .second-heading h2 {
         font-size: 2.8rem;
       }
@@ -324,20 +329,20 @@ const Container = styled.div`
       .first-heading h2 {
         font-size: 1.5rem;
       }
-      
+
       .second-heading h2 {
         font-size: 2.2rem;
       }
-      
+
       .paragraph {
         font-size: 1.1rem;
       }
     }
-    
+
     .smallScreen {
       display: block;
     }
-    
+
     .largeScreen {
       display: none;
     }
@@ -346,25 +351,115 @@ const Container = styled.div`
   @media screen and (max-width: 480px) {
     .introduction {
       padding: 10% 5%;
-      
+
       .first-heading h2 {
         font-size: 1.3rem;
       }
-      
+
       .second-heading h2 {
         font-size: 1.8rem;
       }
-      
+
       .paragraph {
         font-size: 1rem;
         line-height: 1.6;
       }
-      
+
       .glowing-button {
         padding: 0.7rem 2rem;
         font-size: 1rem;
       }
     }
+  }
+
+  .banner-wrapper {
+    position: relative; /* Needed for absolute positioning of children */
+    width: 100%;
+    /* Adjust height as needed for your banner */
+    height: 600px; /* Example height */
+    overflow: hidden; /* To contain the carousel */
+  }
+
+  .banner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center;
+    z-index: 10; /* Ensure banner content is on top of the carousel */
+    /* Add any text styling here if needed, or keep it in the .banner-content */
+  }
+
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust overlay opacity */
+    z-index: 5; /* Ensure overlay is above the carousel but below content */
+  }
+
+  .banner-content {
+    color: white; /* Example text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Add styles for welcome_title, club_name, explore_btn_div here or in your index.css */
+  }
+
+  .welcome-title {
+    /* Styles for welcome title */
+    margin-bottom: 10px;
+  }
+
+  .club-name {
+    /* Styles for club name */
+    margin-bottom: 20px;
+  }
+
+  .animate-character {
+    /* Styles for animated club name */
+    font-size: 2.5em; /* Adjust as needed */
+  }
+
+  .explore-button-container {
+    /* Styles for button container */
+  }
+
+  .explore-button {
+    /* Styles for explore button */
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  /* You might need to adjust the carousel styles as well to fit the banner dimensions */
+  .carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure carousel is behind the banner content */
+  }
+
+  .carousel-container .carousel .slide img {
+    object-fit: cover; /* Ensure images cover the banner area */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* You might need to hide the carousel's default navigation (arrows, indicators) */
+  .carousel-container .carousel-indicators,
+  .carousel-container .control-arrow {
+    display: none;
   }
 `;
 

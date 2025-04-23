@@ -20,54 +20,52 @@ function Event() {
 
       <div className="new_event" id="new_event_1" data-aos="zoom-in">
       <img
-        src="/photos/events/soldering&etching.jpeg"
-        alt="Soldering and Etching"
+        src="/photos/events/tech_kshetra.jpg"
+        alt="tech_kshetra"
         data-aos="zoom-in"
       />
 
 
         <div className="inside_box">
-          <h1>Soldering and Etching Workshop</h1>
+          <h1>TECH_KSHETRA(Project Expo)</h1>
           <p data-aos="zoom-in">
-          Ever wondered how the components are placed on the PCB? Curious to learn how exactly PCBs work?
-          Then get ready to dive into the fascinating world of PCB designing! 🔌
+            The RAS wing of IEEE-SJCE, in collaboration with the IEEE Mysore Subsection, is here with an inter-college project expo like no other!,<br />⚙ TechKshetra ⚙
+
 
             <br />
             <br />
-            The EDS wing of IEEE-SJCE presents you with the flagship event,<br />🪛 Soldering and Etching 🪛Workshop
-            <br />
-            <br />
-            Step into the exciting world of PCB design which gives you hands-on experience in designing, etching, and soldering the circuit boards from scratch.⚙ By the end of the workshop, you'll be fully capable of soldering, etching, and skillfully designing your own circuit boards! 🛩
-            <br />
-            <br />
-            If you're interested, please complete the Google Form:
-            <br />
-            <br />
-            Participate in a team of 2.<br />
-            Registration fee (per person, exclusive of kit):<br />
-             IEEE Members with EDS: Rs. 99/-<br />
-             IEEE Members without EDS: Rs. 399/-<br />
-            Non-IEEE Members: Rs. 599/-<br />
+            Categories:<br/>
+🔸 Category I (1st & 2nd Year Students) – This category focuses on nurturing foundational innovation and promoting technical curiosity and a competitive spirit among early-stage undergraduate students.<br/>
 
-            Kit price: Rs. 699/-
+🔸 Category II (3rd & 4th Year Students ) – It is aimed at providing an advanced platform for students to present their refined, impactful projects and push the boundaries of their technical expertise.
+
             <br />
             <br />
-            🗓 Date: 10th, 11th, and 12th January 2025<br />
-            📍 Venue: Seminar Hall, 1st floor CMS Block
+            Important Details:<br/>
+🗓 Deadline for submission of team details: 29th April, 2025<br/>
+🗓 Project Expo date: 3rd May, 2025<br/>
+🏛 Venue: SJCE, JSS Science and Technology University, Mysore
+
             <br />
             <br />
+            Registration fee (for the selected teams):<br/>
+Team with atleast one IEEE member : Rs. 399/-<br/>
+Team without any IEEE member : Rs. 499/-<br/>
+
             For more information, contact:
             <br />
-            Gagan: <b style={{ color: '#0095da' }}>9902068272</b>
+            Nandeesh: <b style={{ color: '#0095da' }}>7483143962</b>
+            <br/>
+            Pranav: <b style={{ color: '#0095da' }}> 9110682462</b>
           </p>
-          <button className="btn">
+          {/* <button className="btn">
             <a
               style={{ textDecoration: 'none', color: 'white' }}
               href="https://bit.ly/Soldering_and_Etching_Registration_form"
             >
               Register Now
             </a>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
