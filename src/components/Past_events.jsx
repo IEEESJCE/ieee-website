@@ -8,38 +8,40 @@ function Past_events() {
   const pastEvents = [
     {
       id: 1,
-      date: '11th February 2025',
-      title: 'AI Expert Talk and Ideathon',
-      img: '/photos/events/Screenshot 2025-03-26 212852.png',
-      content: `STRONG - Scientific Research for NextGen GirlGeeks was organized by the MCAA India Chapter, funded by the European Union, and supported by the MCAA-Mednight Project, IEEE Mysore Subsection, and IEEE-SJCE. The event aimed to inspire young women to pursue careers in science and research.`,
+      date: '30th November - 03rd December 2023',
+      title: 'Web Dev Bootcamp',
+      img: 'photos/events/web_dev_bootcamp.jpg',
+      content: `The second event of Tuxedo tech-fest, Web Development Bootcamp provides students with hands-on experience in building and designing interactive websites, acquire essential web development skills. 
+      By the end of the workshop, students were able to build their own portfolio.`,
     },
     {
       id: 2,
-      date: '10th - 12th January 2025',
-      title: 'Soldering and Etching Workshop',
-      img: '/photos/events/soldering&etching.jpeg',
-      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
+      date: '28-29th November 2023',
+      title: 'Snap Circuits',
+      img: 'photos/events/Snap_Circuits.jpg',
+      content: `The first event of Tuxedo tech-fest, Snap circuits provided a hands-on experience of electronic components and increased curiosity of electronic circuits and their working among freshers. It was an opportunity to gain knowledge and develop circuit building skills.`,
     },
     {
       id: 3,
-      date: '29th - 30th Nov and 1st Dec 2024',
-      title: 'IOT-3.0  Workshop',
-      img: 'photos/events/iot_workshop.jpeg',
-      content: `A 3-day workshop with a lot of learning and interesting hands-on
-              sessions.We will be covering protocols and all the other important
-              theories, before moving onto the more exciting part of simulating
-              them using Raspberry Pi and Node MC.`,
+      date: '3rd-4th November 2023',
+      title: 'Fun-tastic Fiesta & Orientation Day',
+      img: 'photos/events/fun_event.jpg',
+      content: `Fun-tastic Fiesta was a compilation of thrilling array of events
+              where freshers had an opportunity to make new connections,
+              rejuvenate, get together and have fun! Through Orientation day
+              freshers took the opportunity to get to know about IEEE-SJCE and
+              its activities. We also held a placement talk for the freshers.`,
     },
     {
       id: 4,
-      date: '31st May - 4th June 2023',
-      title: 'Robotics 14',
-      img: 'photos/events/robotics.jpeg',
-      content: `The workshop included basics of microcontrollers,
-              microprocessors,blinking onboard LED, blinking external LED,
-              PWM(breathing LED), pull up and pull down concepts and interrupts
-              all of these concepts were then implemented in building the
-              robots.`,
+      date: '3rd-5th October 2023',
+      title: 'IEEE Envision',
+      img: 'photos/events/ieee_envision.jpg',
+      content: `On IEEE DAY, we celebrated global innovation, technology, and
+              collaboration, driving progress and changing the world together.To
+              celebrate this commitment, IEEE-SJCE has conducted IEEE-Envision,
+              a trio event series. Here is a glimpse of the electrifying events:-
+              Linux Tutelage, Coggle Mindscape, Ad-Vintage.`,
     },
     {
       id: 5,
@@ -53,40 +55,38 @@ function Past_events() {
     },
     {
       id: 6,
-      date: '3rd-5th October 2023',
-      title: 'IEEE Envision',
-      img: 'photos/events/ieee_envision.jpg',
-      content: `On IEEE DAY, we celebrated global innovation, technology, and
-              collaboration, driving progress and changing the world together.To
-              celebrate this commitment, IEEE-SJCE has conducted IEEE-Envision,
-              a trio event series. Here is a glimpse of the electrifying events:-
-              Linux Tutelage, Coggle Mindscape, Ad-Vintage.`,
+      date: '31st May - 4th June 2023',
+      title: 'Robotics 14',
+      img: 'photos/events/robotics.jpeg',
+      content: `The workshop included basics of microcontrollers,
+              microprocessors,blinking onboard LED, blinking external LED,
+              PWM(breathing LED), pull up and pull down concepts and interrupts
+              all of these concepts were then implemented in building the
+              robots.`,
     },
     {
       id: 7,
-      date: '3rd-4th November 2023',
-      title: 'Fun-tastic Fiesta & Orientation Day',
-      img: 'photos/events/fun_event.jpg',
-      content: `Fun-tastic Fiesta was a compilation of thrilling array of events
-              where freshers had an opportunity to make new connections,
-              rejuvenate, get together and have fun! Through Orientation day
-              freshers took the opportunity to get to know about IEEE-SJCE and
-              its activities. We also held a placement talk for the freshers.`,
+      date: '29th - 30th Nov and 1st Dec 2024',
+      title: 'IOT-3.0  Workshop',
+      img: 'photos/events/iot_workshop.jpeg',
+      content: `A 3-day workshop with a lot of learning and interesting hands-on
+      sessions.We will be covering protocols and all the other important
+      theories, before moving onto the more exciting part of simulating
+      them using Raspberry Pi and Node MC.`,
     },
     {
       id: 8,
-      date: '28-29th November 2023',
-      title: 'Snap Circuits',
-      img: 'photos/events/Snap_Circuits.jpg',
-      content: `The first event of Tuxedo tech-fest, Snap circuits provided a hands-on experience of electronic components and increased curiosity of electronic circuits and their working among freshers. It was an opportunity to gain knowledge and develop circuit building skills.`,
+      date: '10th - 12th January 2025',
+      title: 'Soldering and Etching Workshop',
+      img: '/photos/events/soldering&etching.jpeg',
+      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
     },
     {
       id: 9,
-      date: '30th November - 03rd December 2023',
-      title: 'Web Dev Bootcamp',
-      img: 'photos/events/web_dev_bootcamp.jpg',
-      content: `The second event of Tuxedo tech-fest, Web Development Bootcamp provides students with hands-on experience in building and designing interactive websites, acquire essential web development skills. 
-By the end of the workshop, students were able to build their own portfolio.`,
+      date: '11th February 2025',
+      title: 'AI Expert Talk and Ideathon',
+      img: '/photos/events/Screenshot 2025-03-26 212852.png',
+      content: `STRONG - Scientific Research for NextGen GirlGeeks was organized by the MCAA India Chapter, funded by the European Union, and supported by the MCAA-Mednight Project, IEEE Mysore Subsection, and IEEE-SJCE. The event aimed to inspire young women to pursue careers in science and research.`,
     },
   ]
    useEffect(() => {
@@ -103,7 +103,7 @@ By the end of the workshop, students were able to build their own portfolio.`,
         </h1>
         <hr className="hr-1" />
         <VerticalTimeline lineColor={'rgb(147, 169, 187)'}>
-          {pastEvents.map((event) => {
+          {[...pastEvents].reverse().map((event) => {
             return (
               <>
                 {event.id % 2 === 1 ? (

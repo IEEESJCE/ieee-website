@@ -45,15 +45,16 @@
 
 /* Enhanced image styling with advanced effects */
 .new_event img {
-  height: 380px;
+  height: 390px;
   width: 30%;
-  max-width: 50%;
+  max-width: 55%;
   padding: 0.3rem;
   border: 5px solid var(--primary-color);
   border-radius: 20px;
   cursor: pointer;
   margin: auto 0;
   object-fit: cover;
+  object-position: top;
   transition: 
     transform 0.5s var(--bounce-timing),
     border-color 0.3s var(--transition-timing),
