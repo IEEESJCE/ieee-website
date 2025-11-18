@@ -51,14 +51,14 @@ function Mentors() {
         linkedin: 'https://www.linkedin.com/in/shashidhar-r-ph-d-ab6152123/',
         gmail: 'shashidhar.r@sjce.ac.in',
       },
-      //  {
-      //   id: 6,
-      //   type: 'SBMDC ADVISOR',
-      //   src: '/photos/members/',
-      //   name: 'Dr. ANITHA PRASAD',
-      //   linkedin: '',
-      //   gmail: '',
-      // },
+       {
+        id: 6,
+        type: 'SBMDC ADVISOR',
+        src: '/photos/members/anitha_prasad.jpg',
+        name: 'Dr. ANITHA PRASAD',
+        linkedin: '',
+        gmail: 'anith.sp@sjce.ac.in',
+      },
     ]
   return (
     <div>
