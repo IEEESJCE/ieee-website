@@ -22,15 +22,18 @@ function Event() {
 
       {/* ------------ Event 1 ------------ */}
       <div className="new_event" id="new_event_1" data-aos="zoom-in">
-        <img src="photos/events/iot_4.0.jpg" alt="iot_4.0" data-aos="zoom-in" />
+        <img src="photos/events/soldering.jpeg" alt="soldering" data-aos="zoom-in" />
 
         <div className="inside_box">
           <h1>Soldering and Etching</h1>
           <p data-aos="zoom-in">
-          The world of technology is moving to the edge, and the RAS wing of IEEE-SJCE invites you to be a part of this revolution. Join our flagship 3-day hands-on workshop, IoT 4.0, and learn to build the smart, connected devices that are defining the future.
+            Electronics moves from concept to reality when design meets fabrication, and IEEE-SJCE invites you to experience this transformation firsthand. Join our 3-day hands-on Soldering & Etching workshop and learn how electronic circuits are built from the ground up.
             <br />
             <br />
-           Your projects no longer just compute—they connect, sense, and act in the real world. This is your chance to master the core principles of the Internet of Things (IoT) using the versatile Raspberry Pi.
+            From mastering soldering techniques and assembling components to fabricating your own printed circuit boards through etching, this workshop focuses on practical, industry-relevant skills. Participants will gain a complete understanding of how ideas on paper become working hardware.
+            <br />
+            <br />
+            Whether you're a beginner or an aspiring hardware enthusiast, this workshop provides the perfect foundation for embedded systems, robotics, and IoT-based projects.
             <br />
             <br />
             <b>Important Details:</b>
