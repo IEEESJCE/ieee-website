@@ -25,7 +25,7 @@ function Event() {
         <img src="photos/events/iot_4.0.jpg" alt="iot_4.0" data-aos="zoom-in" />
 
         <div className="inside_box">
-          <h1>IOT 4.0</h1>
+          <h1>Soldering and Etching</h1>
           <p data-aos="zoom-in">
             This day honours the historic moment in 1884 when engineers from
             across the globe first gathered to share ideas, collaborate, and
@@ -40,7 +40,7 @@ function Event() {
             <br />
             <br />
             <b>Important Details:</b>
-            <br /> 🗓 Event date: 21st, 22nd, and 23rd November 2025
+            <br /> 🗓 Event date: 19th, 20th, and 21st December 2025
             <br /> 🏛 Venue: IS Seminar Hall (1st floor), JSS-STU
           </p>
         </div>
