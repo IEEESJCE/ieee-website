@@ -27,16 +27,10 @@ function Event() {
         <div className="inside_box">
           <h1>Soldering and Etching</h1>
           <p data-aos="zoom-in">
-            This day honours the historic moment in 1884 when engineers from
-            across the globe first gathered to share ideas, collaborate, and
-            spark innovation. IEEE brings people and technology together to make
-            a real impact in the world. 🌍
+          The world of technology is moving to the edge, and the RAS wing of IEEE-SJCE invites you to be a part of this revolution. Join our flagship 3-day hands-on workshop, IoT 4.0, and learn to build the smart, connected devices that are defining the future.
             <br />
             <br />
-            As part of the IEEE Day celebration, this year we proudly launch the
-            Signal Processing Society. It is a great platform to explore signals
-            in healthcare, environment, and media through workshops and
-            competitions using MATLAB and Python. 👨‍💻
+           Your projects no longer just compute—they connect, sense, and act in the real world. This is your chance to master the core principles of the Internet of Things (IoT) using the versatile Raspberry Pi.
             <br />
             <br />
             <b>Important Details:</b>
