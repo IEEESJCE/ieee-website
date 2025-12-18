@@ -27,13 +27,13 @@ function Event() {
         <div className="inside_box">
           <h1>Soldering and Etching</h1>
           <p data-aos="zoom-in">
-            Electronics moves from concept to reality when design meets fabrication, and IEEE-SJCE invites you to experience this transformation firsthand. Join our 3-day hands-on Soldering & Etching workshop and learn how electronic circuits are built from the ground up.
+            Behind every reliable electronic product lies a well crafted PCB. The EDS wing of IEEE-SJCE brings you its flagship 3-day hands-on workshop, Soldering and Etching, an immersive experience that transforms beginners into confident hardware builders.
             <br />
             <br />
-            From mastering soldering techniques and assembling components to fabricating your own printed circuit boards through etching, this workshop focuses on practical, industry-relevant skills. Participants will gain a complete understanding of how ideas on paper become working hardware.
+            This workshop focuses on the art and science of PCB fabrication—from understanding circuit layouts and etching your own boards to mastering clean, reliable soldering techniques. Participants will experience the complete journey of turning a schematic into a working circuit, gaining practical skills that form the foundation of core electronics.
             <br />
             <br />
-            Whether you're a beginner or an aspiring hardware enthusiast, this workshop provides the perfect foundation for embedded systems, robotics, and IoT-based projects.
+            If you aspire to move beyond simulations and truly build electronics, this workshop is where real electronics begins.
             <br />
             <br />
             <b>Important Details:</b>

@@ -481,3 +481,13 @@
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Main section heading */
+.heading {
+  text-align:center;
+  margin:2% auto 2% auto;
+  font-family: "Barlow", sans-serif;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}

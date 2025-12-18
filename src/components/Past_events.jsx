@@ -8,14 +8,14 @@ function Past_events() {
   const pastEvents = [
     {
       id: 1,
-      date: '21st-23rd November 2025',
+      date: '21st - 23rd November 2025',
       title: 'IOT 4.0',
       img: '/photos/events/iot_4.0.jpg',
       content: `The Robotics and Automation Society conducted the IoT 4.0 workshop, providing participants with hands-on exposure to building smart, connected systems and enhancing their understanding of IoT concepts and real-world applications using embedded platforms.`,
     },
     {
       id: 2,
-      date: '6th-7th November 2025',
+      date: '6th - 7th November 2025',
       title: 'Snap Circuits',
       img: '/photos/events/snap_circuit_2025.jpg',
       content: `The Electron Devices Society conducted the Snap Circuits,it provided a hands-on experience of electronic components and increased curiosity of electronic circuits and their working among freshers. It was an opportunity to gain knowledge and develop circuit building skills. `,
