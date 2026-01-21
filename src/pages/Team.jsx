@@ -41,7 +41,7 @@ function Team() {
       </h1>
       <hr className="hr-1" />
       <p className="paragraph" data-aos="zoom-in">
-        Our Team Members who have contributed immensely to our Growth
+        Our dedicated team members are the backbone of IEEE-SJCE, bringing diverse skills, passion, and commitment to every initiative. From the Executive Committee to specialized boards and societies, each member plays a vital role in advancing our mission of innovation, education, and professional development. Together, we work tirelessly to create opportunities for learning, foster collaboration, and drive positive change within our community. We are proud of the contributions made by all our team members who have helped us grow and make a lasting impact.
       </p>
       <div className="team-container" data-aos="fade-up">
       </div>
@@ -166,7 +166,7 @@ function Team() {
 
       {/* EXECOM 2022 */}
 
-      <button className="accordion" onClick={handleClick}>
+      {/* <button className="accordion" onClick={handleClick}>
         <span>IEEE Execom 2022</span>
         <span className="plus">+</span>
       </button>
@@ -292,7 +292,7 @@ function Team() {
               })}
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   )

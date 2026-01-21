@@ -136,11 +136,12 @@
   .our-team .title {
     font-size: 24px;
     color: #4ea2f1;
-    margin: 15px 0 5px 0;
+    margin: 15px 0 8px 0;
     font-weight: 600;
     transition: color 0.3s ease;
     position: relative;
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
   
   .our-team:hover .title {
@@ -150,7 +151,7 @@
   .our-team .title::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 50%;
     width: 0;
     height: 2px;
@@ -166,11 +167,11 @@
   .our-team .description {
     font-size: 14px;
     color: #b8c0e7;
-    line-height: 25px;
-    margin: 10px 0 0;
+    line-height: 1.6;
+    margin: 12px 0 0 0;
+    padding: 0 10px;
     transition: color 0.3s ease;
-    max-width: 300px;
-    margin: 0 auto;
+    text-align: center;
   }
   
   .our-team:hover .description {
