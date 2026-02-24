@@ -83,11 +83,11 @@ export const current_team_photo = [
   {
     "id": 25,
     "type": "executive_committee",
-    "src": "/photos/members25-26/Ankith Koushik.jpg",
+    "src": "/photos/members25-26/Ankith Kaushik.jpeg",
     "name": "Ankith Koushik",
     "post": "TREASURER",
-    "linkedin": "https://in.linkedin.com/in/ankith-koushik-700258254",
-    "gmail": "ankithkoushik@gmail.com"
+    "linkedin": "http://linkedin.com/in/ankith-kaushik-222339328",
+    "gmail": "ankithkaushik2005@gmail.com"
   },
   {
     "id": 11,
@@ -301,6 +301,36 @@ export const current_team_photo = [
     "gmail": "lalithyag0224@gmail.com"
   },
   {
+    id: 50,
+    type: 'women_in_engineering',
+    src: '/photos/members/Bharath photo - Bharatheshwar M.jpeg',
+    name: 'Bharatheshwar M',
+    post: 'JOINT SECRETARY',
+    linkedin:
+      'http://www.linkedin.com/in/bharatheshwar-m-9323b9187',
+    gmail: 'bharatheshwar31m@gmail.com',
+  },
+  {
+    id: 51,
+    type: 'women_in_engineering',
+    src: '/photos/members/WhatsApp Image 2025-03-24 at 15.07.55_00514846 - Thanmayee A.jpg',
+    name: 'Thanmayee A',
+    post: 'TECHNICAL CO-ORDINATOR',
+    linkedin:
+      'http://www.linkedin.com/in/thanmayee1213',
+    gmail: 'thanmayeea.13@gmail.com',
+  },
+  {
+    id: 52,
+    type: 'women_in_engineering',
+    src: '',
+    name: 'Pragathi P',
+    post: 'EVENT CO-ORDINATOR',
+    linkedin:
+      '',
+    gmail: '',
+  },
+  {
     "id": 12,
     "type": "women_in_engineering",
     "src": "/photos/members25-26/Anagha V Bhat.jpeg",
@@ -318,7 +348,16 @@ export const current_team_photo = [
     "linkedin": "https://www.linkedin.com/in/dhanya-b-146755360",
     "gmail": "iamdhanyab2525@gmail.com"
   },
-  
+  {
+    id: 48,
+    type: 'editorial_board',
+    src: '/photos/members/IMG_5835 - Skanda sai Keshav.jpeg',
+    name: 'Keshav Skanda Sai',
+    post: 'CHAIRPERSON',
+    linkedin: 'https://www.linkedin.com/in/skanda-sai-keshav-814a35258/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BqG2endZmSYKExvezg1mQdQ%3D%3D',
+    gmail: 'niknis81@gmail.com',
+  },
+
   {
     "id": 20,
     "type": "editorial_board",
@@ -327,6 +366,16 @@ export const current_team_photo = [
     "post": "SENIOR EDITOR",
     "linkedin": "www.linkedin.com/in/manyagbasappa",
     "gmail": "manyagbasappa@gmail.com"
+  },
+  {
+    id: 49,
+    type: 'editorial_board',
+    src: '/photos/members/profile - Varadaraj g.jpg',
+    name: 'Varadaraj G',
+    post: 'SENIOR EDITOR',
+    linkedin:
+      'http://www.linkedin.com/in/varadaraj-g-821b30257',
+    gmail: 'varadarajug51@gmail.com',
   },
   {
     "id": 10,
@@ -363,6 +412,15 @@ export const current_team_photo = [
     "post": "GRAPHIC DESIGNER",
     "linkedin": "https://www.linkedin.com/in/mythri-g-285546330",
     "gmail": "mythrig2005@gmail.com"
+  },
+  {
+    id: 49,
+    type: 'membership_development_committee',
+    src: '/photos/members/WhatsApp Image 2025-03-24 at 16.30.21_7c4fb8b1 - Sushanth Doggalli O.jpg',
+    name: 'Sushanth Doggalli O',
+    post: 'CHAIRPERSON',
+    linkedin: 'https://www.linkedin.com/in/sushanth-d-o-2a0980309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    gmail: 'sushanthdoggalli@gmail.com',
   },
 {
     "id": 17,
@@ -403,7 +461,7 @@ export const current_team_photo = [
   {
     "id": 43,
     "type": "web_development_board",
-    "src": "/photos/members25-26/Rajath.webp",
+    "src": "/photos/members25-26/RajathRP.jpg",
     "name": "Rajath R Prasad",
     "post": "CO-ORDINATOR",
     "linkedin": "https://www.linkedin.com/in/rajath-r-prasad",
