@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Profilecard from '../components/profilecard'
 import {
   current_team_photo,
+  team24_25,
   senior2022_team_photo,
 } from '../components/team_photo'
 import '../css/team.css'
@@ -68,7 +69,7 @@ function Team() {
         <div className="executive_committe_card">
           {current_team_photo
             .filter(
-              (photo) => photo.type === 'MEMBERSHIP DEVELOPMENT COMMITTEE'
+              (photo) => photo.type === 'membership_development_committee'
             )
             .map((photo) => {
               return (
@@ -86,7 +87,7 @@ function Team() {
         </h1>
         <div className="executive_committe_card">
           {current_team_photo
-            .filter((photo) => photo.type === 'Electron Devices Society')
+            .filter((photo) => photo.type === 'electron_devices_society')
             .map((photo) => {
               return (
                 <div data-aos="zoom-in">
@@ -103,7 +104,7 @@ function Team() {
         </h1>
         <div className="executive_committe_card">
           {current_team_photo
-            .filter((photo) => photo.type === 'women in engineering')
+            .filter((photo) => photo.type === 'women_in_engineering')
             .map((photo) => {
               return (
                 <div data-aos="zoom-in">
@@ -120,7 +121,7 @@ function Team() {
         </h1>
         <div className="executive_committe_card">
           {current_team_photo
-            .filter((photo) => photo.type === 'robotics and automation society')
+            .filter((photo) => photo.type === 'robotics_and_automation_society')
             .map((photo) => {
               return (
                 <div data-aos="zoom-in">
@@ -130,14 +131,29 @@ function Team() {
             })}
         </div>
       </div>
-
+      <div className="executive_committe">
+        <h1 className="small_heading " id="team_boards_id" data-aos="fade">
+          SIGNAL PROCESSING SOCIETY
+        </h1>
+        <div className="executive_committe_card">
+          {current_team_photo
+            .filter((photo) => photo.type === 'signal_processing_society')
+            .map((photo) => {
+              return (
+                <div data-aos="zoom-in">
+                  <Profilecard key={photo.id} photo={photo} />
+                </div>
+              )
+            })}
+        </div>
+      </div>         
       <div className="executive_committe">
         <h1 className="small_heading " id="team_boards_id" data-aos="fade">
           WEB DEVELOPMENT BOARD
         </h1>
         <div className="executive_committe_card">
           {current_team_photo
-            .filter((photo) => photo.type === 'web development board')
+            .filter((photo) => photo.type === 'web_development_board')
             .map((photo) => {
               return (
                 <div data-aos="zoom-in">
@@ -153,7 +169,7 @@ function Team() {
         </h1>
         <div className="executive_committe_card">
           {current_team_photo
-            .filter((photo) => photo.type === 'editorial board')
+            .filter((photo) => photo.type === 'editorial_board')
             .map((photo) => {
               return (
                 <div data-aos="zoom-in">
