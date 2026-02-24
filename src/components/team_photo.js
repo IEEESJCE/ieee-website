@@ -13,7 +13,7 @@ export const current_team_photo = [
     "type": "executive_committee",
     "src": "/photos/members25-26/Kiran Ramdurg.png",
     "name": "Kiran Ramdurg",
-    "post": "VICE CHAIR PERSON",
+    "post": "VICE CHAIRPERSON",
     "linkedin": "https://www.linkedin.com/in/kiran-ramdurg-85306617a",
     "gmail": "kiranramdurg17@gmail.com"
   },
@@ -92,7 +92,7 @@ export const current_team_photo = [
   {
     "id": 11,
     "type": "executive_committee",
-    "src": "/photos/members25-26/Keerthana R Nair.jpg",
+    "src": "/photos/members25-26/keerthana.jpeg",
     "name": "Keerthana R Nair",
     "post": "CHIEF STUDENT CO-ORDINATOR",
     "linkedin": "https://www.linkedin.com/in/keerthana-r-nair-304b8a2aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -338,6 +338,15 @@ export const current_team_photo = [
     "gmail": "likhithasasa@gmail.com"
   },
   {
+    "id": 47,
+    "type": "editorial_board",
+    "src": "/photos/members25-26/Sushma.jpg",
+    "name": "Sushma M",
+    "post": "EDITOR",
+    "linkedin": "https://www.linkedin.com/in/sushma-m-429034339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "gmail": "sushs0305@gmail.com"
+  },
+  {
     "id": 13,
     "type": "editorial_board",
     "src": "/photos/members25-26/Shalini.jpeg",
@@ -403,7 +412,7 @@ export const current_team_photo = [
   {
     id: 43,
     type: 'web_development_board',
-    src: '/photos/members25-26/Manasa.jpg',
+    src: '/photos/members25-26/Manasa.jpeg',
     name: 'Manasa H N',
     post: 'CO-ORDINATOR',
     linkedin: 'https://www.linkedin.com/in/manasa-h-n-0383bb331',
