@@ -5,7 +5,6 @@ import Profilecard from '../components/profilecard'
 import {
   current_team_photo,
   team24_25,
-  senior2022_team_photo,
 } from '../components/team_photo'
 import '../css/team.css'
 import AOS from 'aos'
@@ -180,10 +179,10 @@ function Team() {
         </div>
       </div>
 
-      {/* EXECOM 2022 */}
+      /*EXECOM 2022 */
 
-      {/* <button className="accordion" onClick={handleClick}>
-        <span>IEEE Execom 2022</span>
+      <button className="accordion" onClick={handleClick}>
+        <span>IEEE Execom 2024-25</span>
         <span className="plus">+</span>
       </button>
 
@@ -193,7 +192,7 @@ function Team() {
             EXECUTIVE COMMITTEE
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter((photo) => photo.type === 'executive_committee')
               .map((photo) => {
                 return (
@@ -209,7 +208,7 @@ function Team() {
             MEMBERSHIP DEVELOPMENT COMMITTEE
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter(
                 (photo) => photo.type === 'MEMBERSHIP DEVELOPMENT COMMITTEE'
               )
@@ -228,7 +227,7 @@ function Team() {
             ELECTRON DEVICES SOCIETY
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter((photo) => photo.type === 'Electron Devices Society')
               .map((photo) => {
                 return (
@@ -245,7 +244,7 @@ function Team() {
             WOMEN IN ENGINEERING
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter((photo) => photo.type === 'women in engineering')
               .map((photo) => {
                 return (
@@ -262,7 +261,7 @@ function Team() {
             ROBOTICS AND AUTOMATION SOCIETY
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter(
                 (photo) => photo.type === 'robotics and automation society'
               )
@@ -281,7 +280,7 @@ function Team() {
             WEB DEVELOPMENT BOARD
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter((photo) => photo.type === 'web development board')
               .map((photo) => {
                 return (
@@ -297,7 +296,7 @@ function Team() {
             EDITORIAL BOARD
           </h1>
           <div className="executive_committe_card">
-            {senior2022_team_photo
+            {team24_25
               .filter((photo) => photo.type === 'editorial board')
               .map((photo) => {
                 return (
@@ -308,7 +307,7 @@ function Team() {
               })}
           </div>
         </div>
-      </div> */}
+      </div>
       <Footer />
     </div>
   )
