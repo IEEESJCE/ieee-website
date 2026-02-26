@@ -8,42 +8,6 @@ function Past_events() {
   const pastEvents = [
     {
       id: 1,
-      date: '21st - 23rd November 2025',
-      title: 'IOT 4.0',
-      img: '/photos/events/iot_4.0.jpg',
-      content: `The Robotics and Automation Society conducted the IoT 4.0 workshop, providing participants with hands-on exposure to building smart, connected systems and enhancing their understanding of IoT concepts and real-world applications using embedded platforms.`,
-    },
-    {
-      id: 2,
-      date: '6th - 7th November 2025',
-      title: 'Snap Circuits',
-      img: '/photos/events/snap_circuit_2025.jpg',
-      content: `The Electron Devices Society conducted the Snap Circuits,it provided a hands-on experience of electronic components and increased curiosity of electronic circuits and their working among freshers. It was an opportunity to gain knowledge and develop circuit building skills. `,
-    },
-    {
-      id: 3,
-      date: '25th October 2025',
-      title: 'Circuitrix',
-      img: '/photos/events/circuitrix_2025.jpg',
-      content: `Our team conducted the event Circuitrix,This hands on session is designed to help the students to explore ,create and simulate both analog and the digital circuits using the powerful circuit simulation tools.`
-    },
-   
-    {
-      id: 4,
-      date: '11th February 2025',
-      title: 'AI Expert Talk and Ideathon',
-      img: '/photos/events/Screenshot 2025-03-26 212852.png',
-      content: `STRONG - Scientific Research for NextGen GirlGeeks was organized by the MCAA India Chapter, funded by the European Union, and supported by the MCAA-Mednight Project, IEEE Mysore Subsection, and IEEE-SJCE. The event aimed to inspire young women to pursue careers in science and research.`,
-    },
-    {
-      id: 5,
-      date: '10th - 12th January 2025',
-      title: 'Soldering and Etching Workshop',
-      img: '/photos/events/soldering&etching.jpeg',
-      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
-    },
-    {
-      id: 6,
       date: '29th - 30th Nov and 1st Dec 2024',
       title: 'IOT-3.0  Workshop',
       img: 'photos/events/iot_workshop.jpeg',
@@ -52,7 +16,48 @@ function Past_events() {
               theories, before moving onto the more exciting part of simulating
               them using Raspberry Pi and Node MC.`,
     },
-    
+    {
+      id: 2,
+      date: '10th - 12th January 2025',
+      title: 'Soldering and Etching Workshop',
+      img: '/photos/events/soldering&etching.jpeg',
+      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
+    },
+    {
+      id: 3,
+      date: '11th February 2025',
+      title: 'AI Expert Talk and Ideathon',
+      img: '/photos/events/Screenshot 2025-03-26 212852.png',
+      content: `STRONG - Scientific Research for NextGen GirlGeeks was organized by the MCAA India Chapter, funded by the European Union, and supported by the MCAA-Mednight Project, IEEE Mysore Subsection, and IEEE-SJCE. The event aimed to inspire young women to pursue careers in science and research.`,
+    },
+    {
+      id: 4,
+      date: '25th October 2025',
+      title: 'Circuitrix',
+      img: '/photos/events/circuitrix_2025.jpg',
+      content: `Our team conducted the event Circuitrix,This hands on session is designed to help the students to explore ,create and simulate both analog and the digital circuits using the powerful circuit simulation tools.`
+    },
+    {
+      id: 5,
+      date: '6th - 7th November 2025',
+      title: 'Snap Circuits',
+      img: '/photos/events/snap_circuit_2025.jpg',
+      content: `The Electron Devices Society conducted the Snap Circuits,it provided a hands-on experience of electronic components and increased curiosity of electronic circuits and their working among freshers. It was an opportunity to gain knowledge and develop circuit building skills. `,
+    },
+    {
+      id: 6,
+      date: '21st - 23rd November 2025',
+      title: 'IOT 4.0',
+      img: '/photos/events/iot_4.0.jpg',
+      content: `The Robotics and Automation Society conducted the IoT 4.0 workshop, providing participants with hands-on exposure to building smart, connected systems and enhancing their understanding of IoT concepts and real-world applications using embedded platforms.`,
+    }, 
+    {
+      id: 7,
+      date: '6th December 2025',
+      title: 'Wave Lab',
+      img: '/photos/events/wavelab.jpg',
+      content: `This is the debut event of the SPS Wing. Students utilized the powerful tool, MATLAB, to understand the basics of Signal Processing. The workshop allows the students to explore the world of digital signal processing utilising an industrial standard tool, MATLAB. The students obtain a MATLAB license which will be useful for their future explorations.`,
+    },   
   ]
    useEffect(() => {
      AOS.init({
@@ -68,7 +73,7 @@ function Past_events() {
         </h1>
         <hr className="hr-1" />
         <VerticalTimeline lineColor={'rgb(147, 169, 187)'}>
-          {pastEvents.map((event) => {
+          {pastEvents.reverse().map((event) => {
             return (
               <>
                 {event.id % 2 === 1 ? (

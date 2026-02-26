@@ -13,15 +13,15 @@ function Event() {
 
   return (
     <div>
-      <div className="event" id="event_part">
+      {/* <div className="event" id="event_part">
         <h1 className="heading" data-aos="fade">
           Upcoming Events
         </h1>
         <hr className="hr-1" />
-      </div>
+      </div> */}
 
       {/* ------------ Event 1 ------------ */}
-      <div className="new_event" id="new_event_1" data-aos="zoom-in">
+      {/* <div className="new_event" id="new_event_1" data-aos="zoom-in">
         <img src="photos/events/soldering.jpeg" alt="soldering" data-aos="zoom-in" />
 
         <div className="inside_box">
@@ -41,7 +41,7 @@ function Event() {
             <br /> 🏛 Venue: IS Seminar Hall (1st floor), JSS-STU
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* ------------ Event 2 ------------ */}
     </div>
