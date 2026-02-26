@@ -24,6 +24,7 @@ function Socities() {
 
       <p className="societies_p ">
         <iframe
+          title="student branch animation"
           className="img1"
           src="https://lottie.host/?file=89a9d017-c9c2-4e7c-a02e-c33653a6972a/3dpYgASICZ.json"
         ></iframe>
@@ -169,6 +170,7 @@ function Socities() {
 
       <p className="societies_p">
         <iframe
+          title="women in engineering animation"
           className="img5"
           src="https://lottie.host/?file=2f28a704-d29d-4531-975b-c3e7e6d9bf20/WVBLEk0GNv.json"
         ></iframe>
@@ -284,6 +286,7 @@ function Socities() {
 
       <p className="societies_p">
         <iframe
+          title="robotics and automation animation"
           className="img7"
           src="https://lottie.host/?file=2761ce9c-5f1d-49bd-9db8-b7b3bd572353/UrP5jahB6E.json"
         ></iframe>

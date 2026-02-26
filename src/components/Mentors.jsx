@@ -77,13 +77,13 @@ function Mentors() {
               >
                 <div className="mentors">
                   <div className="pic">
-                    <img src={data.src} />
+                    <img src={data.src} alt={data.name || "mentor"} />
                     <ul className="social">
                       <li>
                         <a
                           href={`mailto:${data.gmail}`}
                           className="fa fa-envelope"
-                          aria-hidden="true"
+                          aria-label="Send email"
                         ></a>
                       </li>
                       {/* <li>
@@ -93,7 +93,7 @@ function Mentors() {
                         <a href="#" className="fab fa-google-plus"></a>
                       </li> */}
                       <li>
-                        <a href={data.linkedin} className="fab fa-linkedin"></a>
+                        <a href={data.linkedin} className="fab fa-linkedin" aria-label="LinkedIn profile"></a>
                       </li>
                     </ul>
                   </div>

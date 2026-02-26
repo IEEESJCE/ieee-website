@@ -80,6 +80,7 @@ function Contact(){
           {/* <a href="mailto:ieeesjce2019@gmail.com"></a> */}
           <div class="box">
             <iframe
+              title="email animation"
               style={{ border: 'none', height: '100px' }}
               src="https://lottie.host/?file=23ecd9fa-1719-42c7-bcef-b021c5e3c509/eHhdi9dHx9.json"
             ></iframe>
@@ -93,6 +94,7 @@ function Contact(){
           {/* <a href="tel:+918762361434"> */}
           <div class="box">
             <iframe
+              title="phone animation"
               style={{ border: 'none', height: '100px' }}
               src="https://lottie.host/?file=94896b6f-5561-481d-8924-ed335c23637b/eAdCe077z7.json"
             ></iframe>
@@ -105,6 +107,7 @@ function Contact(){
 
           <div class="box">
             <iframe
+              title="instagram animation"
               style={{ border: 'none', height: '100px' }}
               src="https://lottie.host/?file=1341d09a-b282-4dc2-8685-e26dc2784943/Nu0yAutyXc.json"
             ></iframe>

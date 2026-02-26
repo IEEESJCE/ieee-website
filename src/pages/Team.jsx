@@ -179,7 +179,7 @@ function Team() {
         </div>
       </div>
 
-      /*EXECOM 2022 */
+      {/* EXECOM 2022 */}
 
       <button className="accordion" onClick={handleClick}>
         <span>IEEE Execom 2024-25</span>
