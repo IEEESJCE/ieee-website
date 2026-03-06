@@ -33,7 +33,7 @@ function Album() {
               <PhotoView src={photo.src}>
                 <img
                   src={photo.src}
-                  alt="Gallery photo"
+                  alt="Gallery"
                   style={{
                     width: '100%',
                     height: '250px',

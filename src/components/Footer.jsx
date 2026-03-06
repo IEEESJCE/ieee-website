@@ -31,6 +31,7 @@ return (
           IEEE XploreDigital Library
         </a>
         <a href="https://eds.ieee.org/">IEEE EDS</a>
+        <a href="https://signalprocessingsociety.org/">IEEE SPS</a>
         <a href="https://ieeebangalore.org/">IEEE-Bangalore section</a>
         <a href="http://www.ieee-ras.org/">IEEE RAS</a>
       </div>
