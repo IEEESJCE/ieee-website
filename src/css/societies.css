@@ -1,14 +1,124 @@
 /* General Styling */
 body {
-    background: linear-gradient(135deg, #1c2841, #283747); /* Deep gradient background */
-    color: #e0e0e0; /* Light text for contrast */
-    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #1c2841, #283747);
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
-/* Societies Paragraph */
+/* Main container */
+.societies-container {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Society Section Card */
+.society-section {
+  margin: 4rem 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(50, 107, 160, 0.1), rgba(173, 156, 255, 0.05));
+  border: 2px solid rgba(173, 156, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.society-section:hover {
+  border-color: rgba(173, 156, 255, 0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Society Header */
+.society-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem;
+  border-bottom: 2px solid rgba(173, 156, 255, 0.2);
+}
+
+.society-header-content h2 {
+  font-size: 2.5rem;
+  color: #a994ee;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 0 10px rgba(173, 156, 255, 0.3);
+}
+
+.society-header-content p {
+  color: #b8c0e7;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.society-animation {
+  width: 100%;
+  height: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Events Container */
+.events-container {
+  padding: 2rem 3rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Event Card */
+.event-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(173, 156, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(173, 156, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.event-card h3 {
+  color: #4ec4f7;
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.event-card p {
+  color: #b8c0e7;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Societies Paragraph - Updated */
 .societies_p {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
@@ -19,35 +129,33 @@ body {
     line-height: 1.8rem;
     letter-spacing: 0.08rem;
     position: relative;
-    transition: all 0.5s ease; /* Smooth transitions */
-    background: rgba(255, 255, 255, 0.05); /* Subtle background overlay */
+    transition: all 0.5s ease;
+    background: transparent;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
-}
-
-.societies_p:hover {
-    transform: translateY(-5px); /* Lift on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Subheadings */
 .societies_subheading, .societies_small_subheading {
     font-family: 'Montserrat', sans-serif;
     color: #a994ee;
-    font-weight: 600; /* Slightly bolder */
+    font-weight: 600;
     letter-spacing: 0.2rem;
     position: relative;
-    padding-left: 8%;
-    margin-top: 3%;
-    transition: color 0.3s ease; /* Smooth color transition */
+    padding-left: 0;
+    margin-top: 1.5rem;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
 }
 
 .societies_subheading:hover, .societies_small_subheading:hover {
-    color: #ceb9f9; /* Lighter hover color */
-    text-shadow: 0 0 10px rgba(173, 156, 255, 0.5); /* Glowing text shadow */
+    color: #ceb9f9;
+    text-shadow: 0 0 10px rgba(173, 156, 255, 0.5);
 }
 
 .societies_small_subheading {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #a994ee;
     font-size: 1.3rem;
     margin-top: 1%;
 }
@@ -136,7 +244,34 @@ body {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+    .society-header {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .society-header-content h2 {
+      font-size: 1.8rem;
+    }
+
+    .society-animation {
+      height: 200px;
+    }
+
+    .events-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .event-card {
+      padding: 1.5rem;
+    }
+
+    .society-section {
+      margin: 2rem 1rem;
+    }
+
     .societies_p {
         flex-direction: column;
         align-items: center;
@@ -144,15 +279,28 @@ body {
     }
 
     .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
-        width: 90%; /* Responsive image width */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;
+        height: auto;
         margin: 5% 0;
         float: none;
     }
+}
 
-    .women_eng, .robotics, .std_branch, .elect_society {
-        flex-direction: column; /* Stack on smaller screens */
-        text-align: center;
-        margin: 5% 0;
-    }
+@media screen and (max-width: 480px) {
+  .society-header-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .society-header-content p {
+    font-size: 0.9rem;
+  }
+
+  .event-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .event-card p {
+    font-size: 0.85rem;
+  }
 }

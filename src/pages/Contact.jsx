@@ -101,7 +101,7 @@ function Contact(){
 
             <p class="service_para">Reach us on</p>
             <a className="service_link" href="tel:+918762361434">
-              (+91) 7829478991
+              (+91) 7795317819
             </a>
           </div>
 
@@ -118,6 +118,22 @@ function Contact(){
               href="https://www.instagram.com/ieee_sjce/"
             >
               @ieee_sjce
+            </a>
+          </div>
+
+          <div class="box" style={{width:'300px'}}>
+            <img
+              src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
+              alt="LinkedIn logo"
+              style={{ height: '100px', width: 'auto' }}
+            />
+
+            <p class="service_para">Connect with us on LinkedIn</p>
+            <a
+              className="service_link"
+              href="https://www.linkedin.com/company/ieee-sjce/"
+            >
+              IEEE-SJCE
             </a>
           </div>
 

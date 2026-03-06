@@ -80,7 +80,7 @@ function Homepage() {
             knowledge and encourages them to take active part in all of them.
           </p>
           <div className="glowing-button-container">
-            <button className="glowing-button">JOIN US</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScyUvp_2L7Mw3ENLSANaXTQiZmqJJFhxETfKFOXWl9o8wn3Uw/viewform" target="_blank" rel="noopener noreferrer"><button className="glowing-button">JOIN US</button></a>
           </div>
         </div>
       </div>

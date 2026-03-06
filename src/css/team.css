@@ -178,6 +178,11 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  /* ensure content doesn't hide behind fixed navbar on mobile */
+  .heading {
+    padding-top: 100px;
+  }
+
   .executive_committe_card {
       display: flex;
       flex-wrap: wrap;

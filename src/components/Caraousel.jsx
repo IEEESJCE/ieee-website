@@ -5,6 +5,7 @@ import '../css/caraousel.css';
 
 function Caraousel() {
   const images = [
+     { src:"/photos/gallery/caraousel/team25-26.jpeg", alt: "IEEE SJCE team 25-26" },
     { src: "/photos/gallery/caraousel/IMG_5944.JPG", alt: "IEEE SJCE team event" },
     { src: "/photos/gallery/caraousel/IMG_0350.JPG", alt: "IEEE SJCE activity" },
     { src: "/photos/gallery/caraousel/IMG_3552.JPG", alt: "IEEE SJCE members" },
@@ -13,7 +14,7 @@ function Caraousel() {
   ];
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container"> 
       <Carousel
         showArrows={true}
         autoPlay={true}

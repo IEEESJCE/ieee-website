@@ -84,7 +84,7 @@ export const current_team_photo = [
     "id": 25,
     "type": "executive_committee",
     "src": "/photos/members25-26/Ankith Kaushik.jpeg",
-    "name": "Ankith Koushik",
+    "name": "Ankith Kaushik",
     "post": "TREASURER",
     "linkedin": "http://linkedin.com/in/ankith-kaushik-222339328",
     "gmail": "ankithkaushik2005@gmail.com"
@@ -92,7 +92,7 @@ export const current_team_photo = [
   {
     "id": 11,
     "type": "executive_committee",
-    "src": "/photos/members25-26/keerthana.jpeg",
+    "src": "/photos/members25-26/WhatsApp Image 2026-02-26 at 13.49.22.jpeg",
     "name": "Keerthana R Nair",
     "post": "CHIEF STUDENT CO-ORDINATOR",
     "linkedin": "https://www.linkedin.com/in/keerthana-r-nair-304b8a2aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -106,6 +106,15 @@ export const current_team_photo = [
     "post": "PUBLICITY CO-ORDINATOR",
     "linkedin": "https://www.linkedin.com/in/dhanalakshmi-rl-pagade-129488292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "gmail": "dhanalakshmirpagade@gmail.com"
+  },
+   {
+    "id": 51,
+    "type": "executive_committee",
+    "src": "/photos/members25-26/Apoorva H N.jpg",
+    "name": "Apoorva H N",
+    "post": "PUBLICITY CO-ORDINATOR",
+    "linkedin": "https://www.linkedin.com/in/apoorva-h-n-9b7b542b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "gmail": "hmapoorvahn@gmail.com"
   },
   {
     "id": 32,
@@ -305,7 +314,7 @@ export const current_team_photo = [
     type: 'women_in_engineering',
     src: '/photos/members/Bharath photo - Bharatheshwar M.jpeg',
     name: 'Bharatheshwar M',
-    post: 'JOINT SECRETARY',
+    post: 'VICE CHAIRPERSON',
     linkedin:
       'http://www.linkedin.com/in/bharatheshwar-m-9323b9187',
     gmail: 'bharatheshwar31m@gmail.com',
@@ -315,7 +324,7 @@ export const current_team_photo = [
     type: 'women_in_engineering',
     src: '/photos/members/WhatsApp Image 2025-03-24 at 15.07.55_00514846 - Thanmayee A.jpg',
     name: 'Thanmayee A',
-    post: 'TECHNICAL CO-ORDINATOR',
+    post: 'SENIOR TECHNICAL CO-ORDINATOR',
     linkedin:
       'http://www.linkedin.com/in/thanmayee1213',
     gmail: 'thanmayeea.13@gmail.com',
@@ -338,6 +347,15 @@ export const current_team_photo = [
     "post": "SECRETARY",
     "linkedin": "http://linkedin.com/in/anagha-v-bhat-012195361",
     "gmail": "anaghavbhat13@gmail.com"
+  },
+  {
+    "id": 12,
+    "type": "women_in_engineering",
+    "src": "/photos/members25-26/Pratham MS.jpeg",
+    "name": "Pratham M S",
+    "post": "JOINT SECRETARY",
+    "linkedin": "http://www.linkedin.com/in/pratham-ms-1312i",
+    "gmail": "prathamms01@gmail.com"
   },
   {
     "id": 16,
@@ -371,7 +389,7 @@ export const current_team_photo = [
     id: 49,
     type: 'editorial_board',
     src: '/photos/members/profile - Varadaraj g.jpg',
-    name: 'Varadaraj G',
+    name: 'Varada Raj G',
     post: 'SENIOR EDITOR',
     linkedin:
       'http://www.linkedin.com/in/varadaraj-g-821b30257',

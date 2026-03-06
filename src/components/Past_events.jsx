@@ -58,6 +58,13 @@ function Past_events() {
       img: '/photos/events/wavelab.jpg',
       content: `This is the debut event of the SPS Wing. Students utilized the powerful tool, MATLAB, to understand the basics of Signal Processing. The workshop allows the students to explore the world of digital signal processing utilising an industrial standard tool, MATLAB. The students obtain a MATLAB license which will be useful for their future explorations.`,
     },   
+    {
+      id: 8,
+      date: '19th - 21st December 2025',
+      title: 'Soldering and Etching Workshop',
+      img: '/photos/events/soldering.jpeg',
+      content: `The Electron Devices Society conducted SOLDERING & ETCHING WORKSHOP, one of the flagship events of IEEE-SJCE. A 3-day event that gives students a hands-on experience of Soldering and Etching with theoretical and practical sessions.`,
+    },   
   ]
    useEffect(() => {
      AOS.init({
@@ -76,7 +83,7 @@ function Past_events() {
           {pastEvents.reverse().map((event) => {
             return (
               <>
-                {event.id % 2 === 1 ? (
+                {event.id % 2 === 0 ? (
                   <VerticalTimelineElement
                     key={event.id}
                     className="vertical-timeline-element--work"
